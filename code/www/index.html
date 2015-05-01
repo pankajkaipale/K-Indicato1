@@ -1,0 +1,2522 @@
+<!DOCTYPE html>
+<!--HTML5 doctype-->
+<html>
+
+	<head>
+		<link rel="stylesheet" type="text/css" href="media_button_bar/css/media_button_bar.css">
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="app_framework/2.1/css/af.ui.min.css">
+		<link rel="stylesheet" type="text/css" href="app_framework/2.1/css/icons.min.css">
+		<link rel="stylesheet" type="text/css" href="css/index_main.less.css" class="main-less">
+
+		<title>Your New Application</title>
+		<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
+		<style type="text/css">
+			var db=openDatabase("mydb","1.0","my first database","2*1024*1024");
+						/* Prevent copy paste for all elements except text fields */
+						*  { -webkit-user-select:none; -webkit-tap-highlight-color:rgba(255, 255, 255, 0); }
+						input, textarea  { -webkit-user-select:text; }
+		</style>
+		<script src="intelxdk.js"></script>
+		<script type="text/javascript">
+			/* Intel native bridge is available */
+			var onDeviceReady=function(){
+			//hide splash screen
+			intel.xdk.device.hideSplashScreen();
+			};
+			document.addEventListener("intel.xdk.device.ready",onDeviceReady,false);
+		</script>
+		<!--   
+   You may substitute jQuery for the App Framework selector library.
+   See http://app-framework-software.intel.com/documentation.php#afui/afui_jquery
+  -->
+
+		<script type="application/javascript" src="app_framework/2.1/appframework.js"></script>
+		<script type="application/javascript" src="app_framework/2.1/appframework.ui.js" data-ver="1"></script>
+
+		<script src="cordova.js"></script>
+		<script type="application/javascript" src="js/index_user_scripts.js"></script>
+		<script type="application/javascript" src="js/af_subpage.js"></script>
+		<script type="application/javascript" src="xdk/appdesigner/js/rest-of-space.js"></script>
+		<!--   
+   You may substitute jQuery for the App Framework selector library.
+   See http://app-framework-software.intel.com/documentation.php#afui/afui_jquery
+  -->
+
+		<script type="application/javascript" src="js/jquery.min.js"></script>
+		<script type="application/javascript" src="sidebar/js/jquery.event.move.js"></script>
+		<script type="application/javascript" src="sidebar/js/jquery.event.swipe.js"></script>
+		<script type="application/javascript" src="sidebar/js/sidebar.js"></script>
+		<script type="application/javascript" src="sidebar/js/swipe.js"></script>
+		<!--   
+   You may substitute jQuery for the App Framework selector library.
+   See http://app-framework-software.intel.com/documentation.php#afui/afui_jquery
+  -->
+
+		<script type="application/javascript" src="justgage/js/raphael.min.js"></script>
+		<script type="application/javascript" src="justgage/js/justgage.min.js"></script>
+		<script type="application/javascript" src="justgage/gauges.js"></script>
+		<script type="application/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=true"></script>
+
+		<!--   
+   You may substitute jQuery for the App Framework selector library.
+   See http://app-framework-software.intel.com/documentation.php#afui/afui_jquery
+  -->
+		<script type="application/javascript" src="google_maps/google_maps.js"></script>
+	</head>
+
+	<body id="afui" class="1 android light">
+
+		<div class="upage panel" id="uib_page_6" data-header="none" data-footer="none">
+			<div class="upage-outer">
+				<div id="uib_page_6sub" class="upage-content ">
+
+					<div class="grid grid-pad urow uib_row_13 row-height-13" data-uib="layout/row" data-ver="0">
+						<div class="col uib_col_27 col-0_12-12" data-uib="layout/col" data-ver="0">
+							<div class="widget-container content-area vertical-col center">
+
+								<div class="widget uib_w_247 d-margins 1 a" data-uib="media/text" data-ver="0">
+									<div class="widget-container left-receptacle"></div>
+									<div class="widget-container right-receptacle"></div>
+									<div>
+										<p>..............K-INDICATOR.................</p>
+									</div>
+								</div>
+								<div class="grid grid-pad urow uib_row_55 row-height-55" data-uib="layout/row" data-ver="0">
+									<div class="col uib_col_63 col-1_12-12" data-uib="layout/col" data-ver="0">
+										<div class="widget-container content-area vertical-col">
+											<span class="uib_shim"></span>
+										</div>
+									</div>
+									<span class="uib_shim"></span>
+								</div>
+								<div class="uib-sprite-button default-sprite-button hover-sprite-button active-sprite-button sprite-sizing default-text widget uib_w_30 media-button-text-top d-margins" data-uib="media/sprite_button" data-ver="0">
+									<div class="uib-sprite">
+										<a></a>
+									</div>
+								</div><span class="uib_shim"></span>
+							</div>
+						</div>
+						<span class="uib_shim"></span>
+					</div>
+				</div>
+			</div>
+			<!-- /upage-outer -->
+		</div>
+
+		<div class="upage panel" id="uib_page_5" data-header="none" data-footer="none">
+			<div class="upage-outer">
+				<div id="uib_page_5sub" class="upage-content ">
+
+				</div>
+			</div>
+			<!-- /upage-outer -->
+		</div>
+		<!-- /upage -->
+
+		<!-- content goes here-->
+		<div class="uwrap" id="content">
+			<div class="upage panel background 1" id="mainpage" data-header="af-header-0" data-footer="none">
+				<div class="upage-outer">
+					<header class="container-group inner-element uib_w_656" data-uib="app_framework/header" data-ver="1" id="af-header-0">
+						<h1></h1>
+						<div class="widget-container wrapping-col single-centered"></div>
+						<div class="widget-container content-area horiz-area wrapping-col left"></div>
+						<div class="widget-container content-area horiz-area wrapping-col right"></div>
+					</header>
+
+				</div>
+
+				<header class="container-group inner-element uib_w_1" data-uib="app_framework/header" data-ver="1" id="header-1">
+					<h1>K-Indicator</h1>
+					<div class="widget-container wrapping-col single-centered"></div>
+					<div class="widget-container content-area horiz-area wrapping-col left"><a class="button widget uib_w_731 d-margins icon home orange" data-uib="app_framework/button" data-ver="1">Home</a>
+					</div>
+					<div class="widget-container content-area horiz-area wrapping-col right">
+
+					</div>
+				</header>
+				<div class="upage-content" id="mainsub">
+
+					<div class="grid grid-pad urow uib_row_2 row-height-2 cright bar-bg" data-uib="layout/row" data-ver="0">
+						<div class="col uib_col_64 col-0_2-12_2-6_2-2" data-uib="layout/col" data-ver="0">
+							<div class="widget-container content-area vertical-col">
+								<a class="uib-graphic-button default-graphic-sizing default-image-sizing hover-graphic-button active-graphic-button default-graphic-button default-graphic-text widget uib_w_217 d-margins media-button-text-bottom" data-uib="media/graphic_button" data-ver="0">
+									<img src="images/auto.png">
+									<span class="uib-caption">    Auto</span>
+								</a><span class="uib_shim"></span>
+							</div>
+						</div>
+						<div class="col uib_col_23 col-0_2-12_2-6_2-4" data-uib="layout/col" data-ver="0">
+							<div class="widget-container content-area vertical-col">
+
+								<a class="uib-graphic-button default-graphic-sizing default-image-sizing hover-graphic-button active-graphic-button default-graphic-button default-graphic-text widget uib_w_4 d-margins media-button-text-bottom" data-uib="media/graphic_button" data-ver="0"
+								href="uib_page_1">
+									<img src="images/bus.png">
+
+									<span class="uib-caption">    Bus</span>
+								</a><span class="uib_shim"></span>
+							</div>
+						</div>
+						<div class="col uib_col_4 col-0_2-12_2-6_2-4" data-uib="layout/col" data-ver="0">
+							<div class="widget-container content-area vertical-col center">
+
+								<a class="uib-graphic-button default-graphic-sizing default-image-sizing hover-graphic-button active-graphic-button default-graphic-button default-graphic-text widget uib_w_2 d-margins 1 3 media-button-text-bottom" data-uib="media/graphic_button" data-ver="0"
+								href="uib_page_8">
+									<img src="images/rail.png">
+
+									<span class="uib-caption">  Rail </span>
+								</a>
+
+								<span class="uib_shim"></span>
+							</div>
+						</div>
+						<div class="col uib_col_5 col-0_2-12_2-6_2-2" data-uib="layout/col" data-ver="0">
+							<div class="widget-container content-area vertical-col">
+
+								<a class="uib-graphic-button default-graphic-sizing default-image-sizing hover-graphic-button active-graphic-button default-graphic-button default-graphic-text widget uib_w_248 d-margins media-button-text-bottom" data-uib="media/graphic_button" data-ver="0"
+								a="" href="http://k-indicator.weebly.com/jobs.html">
+									<img src="images/search-jobs.png">
+									<span class="uib-caption">Jobs</span>
+								</a>
+								<span class="uib_shim"></span>
+							</div>
+						</div>
+
+						<div class="col uib_col_22 col-0_2-12_2-6_2-4" data-uib="layout/col" data-ver="0">
+							<div class="widget-container content-area vertical-col">
+								<a class="uib-graphic-button default-graphic-sizing default-image-sizing hover-graphic-button active-graphic-button default-graphic-button default-graphic-text widget uib_w_706 d-margins" data-uib="media/graphic_button" data-ver="0">
+									<img src="images/clg (1).png">
+
+									<span class="uib-caption"></span>
+								</a>
+								<span class="uib_shim"></span>
+							</div>
+						</div>
+						<div class="col uib_col_2 col-0_2-12_2-6_2-4" data-uib="layout/col" data-ver="0">
+							<div class="widget-container content-area vertical-col">
+
+								<a class="uib-graphic-button default-graphic-sizing default-image-sizing hover-graphic-button active-graphic-button default-graphic-button default-graphic-text widget uib_w_6 d-margins 3 media-button-text-bottom" data-uib="media/graphic_button" data-ver="0"
+								a="" href="http://k-indicator.weebly.com/movies.html">
+									<img src="images/movie.png">
+
+									<span class="uib-caption">Movies</span>
+								</a>
+								<span class="uib_shim"></span>
+							</div>
+						</div>
+						<span class="uib_shim"></span>
+					</div>
+
+					<div class="grid grid-pad urow uib_row_5 row-height-5 bar-bg" data-uib="layout/row" data-ver="0">
+						<div class="col uib_col_25 col-0_2-12_2-6_2-2" data-uib="layout/col" data-ver="0">
+							<div class="widget-container content-area vertical-col">
+
+								<a class="uib-graphic-button default-graphic-sizing default-image-sizing hover-graphic-button active-graphic-button default-graphic-button default-graphic-text widget uib_w_260 d-margins media-button-text-bottom" data-uib="media/graphic_button" data-ver="0">
+									<img src="images/Hotel.png">
+									<span class="uib-caption">Hotel</span>
+								</a>
+								<span class="uib_shim"></span>
+							</div>
+						</div>
+						<div class="col uib_col_26 col-0_2-12_2-6_2-4" data-uib="layout/col" data-ver="0">
+							<div class="widget-container content-area vertical-col">
+								<a class="uib-graphic-button default-graphic-sizing default-image-sizing hover-graphic-button active-graphic-button default-graphic-button default-graphic-text widget uib_w_15 d-margins 6 media-button-text-bottom" data-uib="media/graphic_button" data-ver="0"
+								href="&lt;&quot;sub-pageuib_page_14&quot;">
+									<img src="images/shri_mahalaxmi_kholapurtif.png">
+
+									<span class="uib-caption">    Kolhapur </span>
+								</a>
+								<span class="uib_shim"></span>
+							</div>
+						</div>
+
+						<div class="col uib_col_61 col-0_2-12_2-6_2-4" data-uib="layout/col" data-ver="0">
+							<div class="widget-container content-area vertical-col">
+
+								<a class="uib-graphic-button default-graphic-sizing default-image-sizing hover-graphic-button active-graphic-button default-graphic-button default-graphic-text widget uib_w_246 d-margins 5 3 media-button-text-bottom" data-uib="media/graphic_button" data-ver="0"
+								a="" href="http://k-indicator.weebly.com/picnic-spots.html">
+									<img src="images/Hike.png">
+									<span class="uib-caption">Picnic spot</span>
+								</a>
+								<span class="uib_shim"></span>
+							</div>
+						</div>
+						<div class="col uib_col_10 col-0_2-12_2-6_2-2" data-uib="layout/col" data-ver="0">
+							<div class="widget-container content-area vertical-col">
+
+								<a class="uib-graphic-button default-graphic-sizing default-image-sizing hover-graphic-button active-graphic-button default-graphic-button default-graphic-text widget uib_w_17 d-margins media-button-text-bottom" data-uib="media/graphic_button" data-ver="0">
+									<img src="images/phone.png">
+									<span class="uib-caption">Emergency</span>
+								</a>
+								<a class="uib-graphic-button default-graphic-sizing default-image-sizing hover-graphic-button active-graphic-button default-graphic-button default-graphic-text widget uib_w_7 d-margins media-button-text-bottom" data-uib="media/graphic_button" data-ver="0"
+								a="" href="http://k-indicator.weebly.com/alert.html">
+									<img src="images/alarm-bell-1.png">
+
+									<span class="uib-caption">Alert</span>
+								</a><span class="uib_shim"></span>
+							</div>
+						</div>
+						<div class="col uib_col_11 col-0_2-12_2-6_2-4" data-uib="layout/col" data-ver="0">
+							<div class="widget-container content-area vertical-col">
+
+								<a class="uib-graphic-button default-graphic-sizing default-image-sizing hover-graphic-button active-graphic-button default-graphic-button default-graphic-text widget uib_w_705 d-margins media-button-text-bottom" data-uib="media/graphic_button" data-ver="0">
+									<img src="images/map-icon.png">
+									<span class="uib-caption">NearBy</span>
+								</a>
+								<a class="uib-graphic-button default-graphic-sizing default-image-sizing hover-graphic-button active-graphic-button default-graphic-button default-graphic-text widget uib_w_22 d-margins media-button-text-bottom" data-uib="media/graphic_button" data-ver="0">
+									<img src="images/update.png">
+									<span class="uib-caption">Update</span>
+								</a><span class="uib_shim"></span>
+							</div>
+						</div>
+						<div class="col uib_col_9 col-0_2-12_2-6_2-4" data-uib="layout/col" data-ver="0">
+							<div class="widget-container content-area vertical-col">
+
+								<a class="uib-graphic-button default-graphic-sizing default-image-sizing hover-graphic-button active-graphic-button default-graphic-button default-graphic-text widget uib_w_707 d-margins media-button-text-bottom" data-uib="media/graphic_button" data-ver="0"
+								a="" href="http://www.channelb.in/btv/news.aspx">
+									<img src="images/News-icon.png">
+									<span class="uib-caption">K-khabar</span>
+								</a>
+
+								<a class="uib-graphic-button default-graphic-sizing default-image-sizing hover-graphic-button active-graphic-button default-graphic-button default-graphic-text widget uib_w_19 d-margins media-button-text-bottom" data-uib="media/graphic_button" data-ver="0">
+									<img src="images/Letter-K-icon.png">
+									<span class="uib-caption">About</span>
+								</a><span class="uib_shim"></span>
+							</div>
+						</div>
+						<span class="uib_shim"></span>
+					</div>
+					<div class="grid grid-pad urow uib_row_98 row-height-98" data-uib="layout/row" data-ver="0">
+						<div class="col uib_col_151 col-0_1-13_1-6_1-3_1-1_1-1" data-uib="layout/col" data-ver="0">
+							<div class="widget-container content-area vertical-col">
+								<span class="uib_shim"></span>
+							</div>
+						</div>
+						<div class="col uib_col_145 col-0_1-13_1-6_1-3_1-2_1-1" data-uib="layout/col" data-ver="0">
+							<div class="widget-container content-area vertical-col right">
+								<span class="uib_shim"></span>
+							</div>
+						</div>
+						<div class="col uib_col_147 col-0_1-13_1-6_1-3_1-2_1-1" data-uib="layout/col" data-ver="0">
+							<div class="widget-container content-area vertical-col">
+								<span class="uib_shim"></span>
+							</div>
+						</div>
+						<div class="col uib_col_146 col-0_1-13_1-6_1-3_1-1_1-1" data-uib="layout/col" data-ver="0">
+							<div class="widget-container content-area vertical-col">
+								<span class="uib_shim"></span>
+							</div>
+						</div>
+						<div class="col uib_col_144 col-0_1-13_1-6_1-3_1-2_1-1" data-uib="layout/col" data-ver="0">
+							<div class="widget-container content-area wrapping-col left">
+								<span class="uib_shim"></span>
+							</div>
+						</div>
+						<div class="col uib_col_149 col-0_1-13_1-6_1-3_1-2_1-1" data-uib="layout/col" data-ver="0">
+							<div class="widget-container content-area vertical-col">
+								<span class="uib_shim"></span>
+							</div>
+						</div>
+						<div class="col uib_col_148 col-0_1-13_1-7_1-3_1-1_1-1" data-uib="layout/col" data-ver="0">
+							<div class="widget-container content-area vertical-col">
+								<span class="uib_shim"></span>
+							</div>
+						</div>
+						<div class="col uib_col_135 col-0_1-13_1-7_1-3_1-2_1-1" data-uib="layout/col" data-ver="0">
+							<div class="widget-container content-area vertical-col">
+								<span class="uib_shim"></span>
+							</div>
+						</div>
+						<div class="col uib_col_142 col-0_1-13_1-7_1-3_1-2_1-1" data-uib="layout/col" data-ver="0">
+							<div class="widget-container content-area vertical-col">
+								<span class="uib_shim"></span>
+							</div>
+						</div>
+						<div class="col uib_col_139 col-0_1-13_1-7_1-4_1-2_1-1" data-uib="layout/col" data-ver="0">
+							<div class="widget-container content-area vertical-col">
+								<span class="uib_shim"></span>
+							</div>
+						</div>
+						<div class="col uib_col_138 col-0_1-13_1-7_1-4_1-2_1-1" data-uib="layout/col" data-ver="0">
+							<div class="widget-container content-area vertical-col">
+								<span class="uib_shim"></span>
+							</div>
+						</div>
+						<div class="col uib_col_136 col-0_1-13_1-7_1-4_1-2_1-1" data-uib="layout/col" data-ver="0">
+							<div class="widget-container content-area vertical-col">
+								<span class="uib_shim"></span>
+							</div>
+						</div>
+						<div class="col uib_col_132 col-0_0-13_0-7_0-4_0-2_0-1" data-uib="layout/col" data-ver="0">
+							<div class="widget-container content-area vertical-col">
+								<span class="uib_shim"></span>
+							</div>
+						</div>
+						<div class="col uib_col_126 col-0_0-13_0-7_0-4_0-2_0-1" data-uib="layout/col" data-ver="0">
+							<div class="widget-container content-area vertical-col">
+								<span class="uib_shim"></span>
+							</div>
+						</div>
+						<div class="col uib_col_130 col-0_0-13_0-7_0-4_0-2_0-1" data-uib="layout/col" data-ver="0">
+							<div class="widget-container content-area vertical-col">
+								<span class="uib_shim"></span>
+							</div>
+						</div>
+						<div class="col uib_col_127 col-0_0-13_0-7_0-4_0-2_0-1" data-uib="layout/col" data-ver="0">
+							<div class="widget-container content-area vertical-col">
+								<span class="uib_shim"></span>
+							</div>
+						</div>
+						<div class="col uib_col_109 col-0_0-13_0-7_0-4_0-2_0-1" data-uib="layout/col" data-ver="0">
+							<div class="widget-container content-area vertical-col">
+
+								<span class="uib_shim"></span>
+							</div>
+						</div>
+						<div class="col uib_col_122 col-0_0-13_0-7_0-4_0-2_0-1" data-uib="layout/col" data-ver="0">
+							<div class="widget-container content-area vertical-col">
+
+								<span class="uib_shim"></span>
+							</div>
+						</div>
+						<div class="col uib_col_124 col-0_0-13_0-7_0-4_0-2_0-1" data-uib="layout/col" data-ver="0">
+							<div class="widget-container content-area vertical-col">
+
+								<span class="uib_shim"></span>
+							</div>
+						</div>
+						<div class="col uib_col_123 col-0_0-13_0-7_0-4_0-2_0-1" data-uib="layout/col" data-ver="0">
+							<div class="widget-container content-area vertical-col">
+
+								<span class="uib_shim"></span>
+							</div>
+						</div>
+						<div class="col uib_col_129 col-0_0-13_0-7_0-4_0-2_0-1" data-uib="layout/col" data-ver="0">
+							<div class="widget-container content-area vertical-col">
+								<span class="uib_shim"></span>
+							</div>
+						</div>
+						<div class="col uib_col_131 col-0_0-13_0-7_0-4_0-2_0-1" data-uib="layout/col" data-ver="0">
+							<div class="widget-container content-area vertical-col">
+								<span class="uib_shim"></span>
+							</div>
+						</div>
+						<div class="col uib_col_140 col-0_-1-13_-1-7_-1-4_-1-2_-1-1" data-uib="layout/col" data-ver="0">
+							<div class="widget-container content-area vertical-col">
+								<span class="uib_shim"></span>
+							</div>
+						</div>
+						<div class="col uib_col_141 col-0_1-13_1-7_1-4_1-2_1-1" data-uib="layout/col" data-ver="0">
+							<div class="widget-container content-area vertical-col">
+
+								<span class="uib_shim"></span>
+							</div>
+						</div>
+						<div class="col uib_col_150 col-0_1-13_1-7_1-4_1-2_1-1" data-uib="layout/col" data-ver="0">
+							<div class="widget-container content-area vertical-col">
+
+								<span class="uib_shim"></span>
+							</div>
+						</div>
+
+						<span class="uib_shim"></span>
+					</div>
+				</div>
+				<div id="uib_picnic" class="upage-content hidden">
+				</div>
+				<div id="uib_collage" class="upage-content hidden">
+
+					<div class="grid grid-pad urow uib_row_106 row-height-106" data-uib="layout/row" data-ver="0">
+						<div class="col uib_col_125 col-0_12-12" data-uib="layout/col" data-ver="0">
+							<div class="widget-container content-area vertical-col">
+
+								<a class="button widget uib_w_708 d-margins icon magnifier green" data-uib="app_framework/button" data-ver="1">Enginnering colleges</a>
+								<ul class="list widget uib_w_709 d-margins" data-uib="app_framework/listview" data-ver="1">
+									<li class="widget uib_w_710" data-uib="app_framework/listitem" data-ver="1"><a>K.I.T college of engg.</a>
+									</li>
+									<li class="widget uib_w_711" data-uib="app_framework/listitem" data-ver="1"><a>D.Y.patil college of engg.</a>
+									</li>
+									<li class="widget uib_w_712" data-uib="app_framework/listitem" data-ver="1"><a>Bharti Vidyapeeth's college of engg.</a>
+									</li>
+								</ul><span class="uib_shim"></span>
+							</div>
+						</div>
+						<span class="uib_shim"></span>
+					</div>
+
+					<div class="grid grid-pad urow uib_row_107 row-height-107" data-uib="layout/row" data-ver="0">
+						<div class="col uib_col_128 col-0_12-12" data-uib="layout/col" data-ver="0">
+							<div class="widget-container content-area vertical-col">
+
+								<a class="button widget uib_w_713 d-margins icon magnifier green" data-uib="app_framework/button" data-ver="1">Senior colleges</a>
+								<ul class="list widget uib_w_714 d-margins" data-uib="app_framework/listview" data-ver="1">
+									<li class="widget uib_w_715" data-uib="app_framework/listitem" data-ver="1"><a>Rajaram college </a>
+									</li>
+									<li class="widget uib_w_716" data-uib="app_framework/listitem" data-ver="1"><a>Rajarshi Chhatrapati Shahu College</a>
+									</li>
+									<li class="widget uib_w_717" data-uib="app_framework/listitem" data-ver="1"><a>Vivekanand College</a>
+									</li>
+								</ul><a class="button widget uib_w_718 d-margins icon magnifier green" data-uib="app_framework/button" data-ver="1">Junior colleges</a>
+								<ul class="list widget uib_w_719 d-margins" data-uib="app_framework/listview" data-ver="1">
+									<li class="widget uib_w_720" data-uib="app_framework/listitem" data-ver="1"><a>List Item</a>
+									</li>
+									<li class="widget uib_w_721" data-uib="app_framework/listitem" data-ver="1"><a>List Item</a>
+									</li>
+									<li class="widget uib_w_722" data-uib="app_framework/listitem" data-ver="1"><a>List Item</a>
+									</li>
+								</ul><span class="uib_shim"></span>
+							</div>
+						</div>
+						<span class="uib_shim"></span>
+					</div>
+				</div>
+				<div id="uib_gallary" class="upage-content hidden">
+
+					<div class="grid grid-pad urow uib_row_104 row-height-104" data-uib="layout/row" data-ver="0">
+						<div class="col uib_col_120 col-0_12-12" data-uib="layout/col" data-ver="0">
+							<div class="widget-container content-area vertical-col center">
+
+								<div class="widget uib_w_701 scale-image d-margins" data-uib="media/img" data-ver="0">
+									<figure class="figure-align">
+										<figcaption data-position="top">Shalini palece</figcaption>
+										<img src="images/Kolhapur-3.jpg">
+
+									</figure>
+								</div>
+								<div class="widget uib_w_700 scale-image d-margins" data-uib="media/img" data-ver="0">
+									<figure class="figure-align">
+										<img src="images/shivaji_university.jpg">
+
+										<figcaption data-position="bottom">Shivaji university</figcaption>
+									</figure>
+								</div>
+
+								<a class="button widget uib_w_725 d-margins icon new orange" data-uib="app_framework/button" data-ver="1">Upload</a><span class="uib_shim"></span>
+							</div>
+						</div>
+						<span class="uib_shim"></span>
+					</div>
+
+					<div class="grid grid-pad urow uib_row_105 row-height-105" data-uib="layout/row" data-ver="0">
+						<div class="col uib_col_121 col-0_12-12" data-uib="layout/col" data-ver="0">
+							<div class="widget-container content-area vertical-col">
+
+								<span class="uib_shim"></span>
+							</div>
+						</div>
+						<span class="uib_shim"></span>
+					</div>
+
+					<div class="grid grid-pad urow uib_row_111 row-height-111" data-uib="layout/row" data-ver="0">
+						<div class="col uib_col_143 col-0_12-12" data-uib="layout/col" data-ver="0">
+							<div class="widget-container content-area vertical-col">
+								<span class="uib_shim"></span>
+							</div>
+						</div>
+						<span class="uib_shim"></span>
+					</div>
+				</div>
+				<div id="uib_thetres" class="upage-content hidden">
+
+					<div class="grid grid-pad urow uib_row_101 row-height-101" data-uib="layout/row" data-ver="0">
+						<div class="col uib_col_116 col-0_12-12" data-uib="layout/col" data-ver="0">
+							<div class="widget-container content-area vertical-col">
+
+								<a class="button widget uib_w_683 d-margins red" data-uib="app_framework/button" data-ver="1">Thetres list</a>
+								<ul class="list widget uib_w_684 d-margins" data-uib="app_framework/listview" data-ver="1">
+									<li class="widget uib_w_685" data-uib="app_framework/listitem" data-ver="1"><a>Hira Chitra Mandir</a>
+									</li>
+									<li class="widget uib_w_686" data-uib="app_framework/listitem" data-ver="1"><a>Padma</a>
+									</li>
+									<li class="widget uib_w_687" data-uib="app_framework/listitem" data-ver="1"><a>Prabhat</a>
+									</li>
+								</ul>
+								<ul class="list widget uib_w_688 d-margins" data-uib="app_framework/listview" data-ver="1">
+									<li class="widget uib_w_689" data-uib="app_framework/listitem" data-ver="1"><a>Royal</a>
+									</li>
+									<li class="widget uib_w_690" data-uib="app_framework/listitem" data-ver="1"><a>Shahu</a>
+									</li>
+									<li class="widget uib_w_691" data-uib="app_framework/listitem" data-ver="1"><a>Ayodhya</a>
+									</li>
+								</ul><span class="uib_shim"></span>
+							</div>
+						</div>
+						<span class="uib_shim"></span>
+					</div>
+
+					<div class="grid grid-pad urow uib_row_102 row-height-102" data-uib="layout/row" data-ver="0">
+						<div class="col uib_col_117 col-0_12-12" data-uib="layout/col" data-ver="0">
+							<div class="widget-container content-area vertical-col">
+
+								<a class="button widget uib_w_682 d-margins red" data-uib="app_framework/button" data-ver="1">Multiplex list</a>
+								<ul class="list widget uib_w_692 d-margins" data-uib="app_framework/listview" data-ver="1">
+									<li class="widget uib_w_693" data-uib="app_framework/listitem" data-ver="1"><a>Parvati</a>
+									</li>
+
+								</ul><a class="button widget uib_w_694 d-margins icon home yellow" data-uib="app_framework/button" data-ver="1">goto5</a><span class="uib_shim"></span>
+							</div>
+						</div>
+						<span class="uib_shim"></span>
+					</div>
+				</div>
+
+				<div id="Vita" class="upage-content hidden">
+
+					<div class="grid grid-pad urow uib_row_71 row-height-71" data-uib="layout/row" data-ver="0">
+						<div class="col uib_col_82 col-0_12-12" data-uib="layout/col" data-ver="0">
+							<div class="widget-container content-area vertical-col">
+
+								<ul class="list widget uib_w_416 d-margins" data-uib="app_framework/listview" data-ver="1">
+									<li class="widget uib_w_417" data-uib="app_framework/listitem" data-ver="1"><a>07:00 AM</a>
+									</li>
+									<li class="widget uib_w_418" data-uib="app_framework/listitem" data-ver="1"><a>07:45     AM</a>
+									</li>
+									<li class="widget uib_w_419" data-uib="app_framework/listitem" data-ver="1"><a>09:30    AM</a>
+									</li>
+								</ul>
+								<ul class="list widget uib_w_420 d-margins" data-uib="app_framework/listview" data-ver="1">
+									<li class="widget uib_w_421" data-uib="app_framework/listitem" data-ver="1"><a>10:45      AM</a>
+									</li>
+									<li class="widget uib_w_422" data-uib="app_framework/listitem" data-ver="1"><a>11:00    AM</a>
+									</li>
+									<li class="widget uib_w_423" data-uib="app_framework/listitem" data-ver="1"><a>11:15     AM</a>
+									</li>
+								</ul>
+								<ul class="list widget uib_w_424 d-margins" data-uib="app_framework/listview" data-ver="1">
+									<li class="widget uib_w_425" data-uib="app_framework/listitem" data-ver="1"><a>12:45   PM</a>
+									</li>
+									<li class="widget uib_w_426" data-uib="app_framework/listitem" data-ver="1"><a>13:15      PM</a>
+									</li>
+									<li class="widget uib_w_427" data-uib="app_framework/listitem" data-ver="1"><a>13:20      PM</a>
+									</li>
+								</ul>
+								<ul class="list widget uib_w_428 d-margins" data-uib="app_framework/listview" data-ver="1">
+									<li class="widget uib_w_429" data-uib="app_framework/listitem" data-ver="1"><a>14:00     PM</a>
+									</li>
+									<li class="widget uib_w_430" data-uib="app_framework/listitem" data-ver="1"><a>16:30    PM</a>
+									</li>
+								</ul><span class="uib_shim"></span>
+							</div>
+						</div>
+						<span class="uib_shim"></span>
+					</div>
+				</div>
+				<div id="Usamanabad" class="upage-content hidden">
+
+					<div class="grid grid-pad urow uib_row_72 row-height-72" data-uib="layout/row" data-ver="0">
+						<div class="col uib_col_83 col-0_12-12" data-uib="layout/col" data-ver="0">
+							<div class="widget-container content-area vertical-col">
+
+								<ul class="list widget uib_w_431 d-margins" data-uib="app_framework/listview" data-ver="1">
+									<li class="widget uib_w_432" data-uib="app_framework/listitem" data-ver="1"><a>6:45 AM</a>
+									</li>
+									<li class="widget uib_w_433" data-uib="app_framework/listitem" data-ver="1"><a>14:30  PM</a>
+									</li>
+									<li class="widget uib_w_434" data-uib="app_framework/listitem" data-ver="1"><a>21:00 PM</a>
+									</li>
+								</ul>
+								<ul class="list widget uib_w_435 d-margins" data-uib="app_framework/listview" data-ver="1">
+									<li class="widget uib_w_436" data-uib="app_framework/listitem" data-ver="1"><a>1:15     AM</a>
+									</li>
+								</ul><span class="uib_shim"></span>
+							</div>
+						</div>
+						<span class="uib_shim"></span>
+					</div>
+				</div>
+				<div id="Tulajapur" class="upage-content hidden">
+
+					<div class="grid grid-pad urow uib_row_73 row-height-73" data-uib="layout/row" data-ver="0">
+						<div class="col uib_col_84 col-0_12-12" data-uib="layout/col" data-ver="0">
+							<div class="widget-container content-area vertical-col">
+
+								<ul class="list widget uib_w_437 d-margins" data-uib="app_framework/listview" data-ver="1">
+									<li class="widget uib_w_438" data-uib="app_framework/listitem" data-ver="1"><a>01:35   AM</a>
+									</li>
+									<li class="widget uib_w_439" data-uib="app_framework/listitem" data-ver="1"><a>07:00        AM</a>
+									</li>
+									<li class="widget uib_w_440" data-uib="app_framework/listitem" data-ver="1"><a>08:30     AM</a>
+									</li>
+								</ul>
+								<ul class="list widget uib_w_441 d-margins" data-uib="app_framework/listview" data-ver="1">
+									<li class="widget uib_w_442" data-uib="app_framework/listitem" data-ver="1"><a>09:15        AM</a>
+									</li>
+									<li class="widget uib_w_443" data-uib="app_framework/listitem" data-ver="1"><a>13:45     PM</a>
+									</li>
+									<li class="widget uib_w_444" data-uib="app_framework/listitem" data-ver="1"><a>15:30     PM</a>
+									</li>
+								</ul>
+								<ul class="list widget uib_w_449 d-margins" data-uib="app_framework/listview" data-ver="1">
+									<li class="widget uib_w_450" data-uib="app_framework/listitem" data-ver="1"><a>20:00      PM</a>
+									</li>
+								</ul>
+								<ul class="list widget uib_w_445 d-margins" data-uib="app_framework/listview" data-ver="1">
+									<li class="widget uib_w_446" data-uib="app_framework/listitem" data-ver="1"><a>21:00      PM</a>
+									</li>
+									<li class="widget uib_w_447" data-uib="app_framework/listitem" data-ver="1"><a>22:30    PM</a>
+									</li>
+									<li class="widget uib_w_448" data-uib="app_framework/listitem" data-ver="1"><a>23:00        PM</a>
+									</li>
+								</ul><span class="uib_shim"></span>
+							</div>
+						</div>
+						<span class="uib_shim"></span>
+					</div>
+				</div>
+				<div id="Tasgaon" class="upage-content hidden">
+
+					<div class="grid grid-pad urow uib_row_74 row-height-74" data-uib="layout/row" data-ver="0">
+						<div class="col uib_col_85 col-0_12-12" data-uib="layout/col" data-ver="0">
+							<div class="widget-container content-area vertical-col">
+
+								<ul class="list widget uib_w_451 d-margins" data-uib="app_framework/listview" data-ver="1">
+									<li class="widget uib_w_452" data-uib="app_framework/listitem" data-ver="1"><a>List Item</a>
+									</li>
+									<li class="widget uib_w_453" data-uib="app_framework/listitem" data-ver="1"><a>List Item</a>
+									</li>
+									<li class="widget uib_w_454" data-uib="app_framework/listitem" data-ver="1"><a>List Item</a>
+									</li>
+								</ul>
+								<ul class="list widget uib_w_455 d-margins" data-uib="app_framework/listview" data-ver="1">
+									<li class="widget uib_w_456" data-uib="app_framework/listitem" data-ver="1"><a>List Item</a>
+									</li>
+									<li class="widget uib_w_457" data-uib="app_framework/listitem" data-ver="1"><a>List Item</a>
+									</li>
+									<li class="widget uib_w_458" data-uib="app_framework/listitem" data-ver="1"><a>List Item</a>
+									</li>
+								</ul>
+								<ul class="list widget uib_w_459 d-margins" data-uib="app_framework/listview" data-ver="1">
+									<li class="widget uib_w_460" data-uib="app_framework/listitem" data-ver="1"><a>List Item</a>
+									</li>
+									<li class="widget uib_w_461" data-uib="app_framework/listitem" data-ver="1"><a>List Item</a>
+									</li>
+									<li class="widget uib_w_462" data-uib="app_framework/listitem" data-ver="1"><a>List Item</a>
+									</li>
+								</ul>
+								<ul class="list widget uib_w_463 d-margins" data-uib="app_framework/listview" data-ver="1">
+									<li class="widget uib_w_464" data-uib="app_framework/listitem" data-ver="1"><a>List Item</a>
+									</li>
+									<li class="widget uib_w_465" data-uib="app_framework/listitem" data-ver="1"><a>List Item</a>
+									</li>
+									<li class="widget uib_w_466" data-uib="app_framework/listitem" data-ver="1"><a>List Item</a>
+									</li>
+								</ul>
+								<ul class="list widget uib_w_467 d-margins" data-uib="app_framework/listview" data-ver="1">
+									<li class="widget uib_w_468" data-uib="app_framework/listitem" data-ver="1"><a>List Item</a>
+									</li>
+									<li class="widget uib_w_469" data-uib="app_framework/listitem" data-ver="1"><a>List Item</a>
+									</li>
+									<li class="widget uib_w_470" data-uib="app_framework/listitem" data-ver="1"><a>List Item</a>
+									</li>
+								</ul><span class="uib_shim"></span>
+							</div>
+						</div>
+						<span class="uib_shim"></span>
+					</div>
+				</div>
+				<div id="Solapur" class="upage-content hidden">
+
+					<div class="grid grid-pad urow uib_row_75 row-height-75" data-uib="layout/row" data-ver="0">
+						<div class="col uib_col_86 col-0_12-12" data-uib="layout/col" data-ver="0">
+							<div class="widget-container content-area vertical-col">
+
+								<ul class="list widget uib_w_471 d-margins" data-uib="app_framework/listview" data-ver="1">
+									<li class="widget uib_w_472" data-uib="app_framework/listitem" data-ver="1"><a>List Item</a>
+									</li>
+									<li class="widget uib_w_473" data-uib="app_framework/listitem" data-ver="1"><a>List Item</a>
+									</li>
+									<li class="widget uib_w_474" data-uib="app_framework/listitem" data-ver="1"><a>List Item</a>
+									</li>
+								</ul>
+								<ul class="list widget uib_w_475 d-margins" data-uib="app_framework/listview" data-ver="1">
+									<li class="widget uib_w_476" data-uib="app_framework/listitem" data-ver="1"><a>List Item</a>
+									</li>
+									<li class="widget uib_w_477" data-uib="app_framework/listitem" data-ver="1"><a>List Item</a>
+									</li>
+									<li class="widget uib_w_478" data-uib="app_framework/listitem" data-ver="1"><a>List Item</a>
+									</li>
+								</ul>
+								<ul class="list widget uib_w_479 d-margins" data-uib="app_framework/listview" data-ver="1">
+									<li class="widget uib_w_480" data-uib="app_framework/listitem" data-ver="1"><a>List Item</a>
+									</li>
+									<li class="widget uib_w_481" data-uib="app_framework/listitem" data-ver="1"><a>List Item</a>
+									</li>
+									<li class="widget uib_w_482" data-uib="app_framework/listitem" data-ver="1"><a>List Item</a>
+									</li>
+								</ul>
+								<ul class="list widget uib_w_483 d-margins" data-uib="app_framework/listview" data-ver="1">
+									<li class="widget uib_w_484" data-uib="app_framework/listitem" data-ver="1"><a>List Item</a>
+									</li>
+									<li class="widget uib_w_485" data-uib="app_framework/listitem" data-ver="1"><a>List Item</a>
+									</li>
+									<li class="widget uib_w_486" data-uib="app_framework/listitem" data-ver="1"><a>List Item</a>
+									</li>
+								</ul>
+								<ul class="list widget uib_w_487 d-margins" data-uib="app_framework/listview" data-ver="1">
+									<li class="widget uib_w_488" data-uib="app_framework/listitem" data-ver="1"><a>List Item</a>
+									</li>
+									<li class="widget uib_w_489" data-uib="app_framework/listitem" data-ver="1"><a>List Item</a>
+									</li>
+									<li class="widget uib_w_490" data-uib="app_framework/listitem" data-ver="1"><a>List Item</a>
+									</li>
+								</ul>
+								<ul class="list widget uib_w_491 d-margins" data-uib="app_framework/listview" data-ver="1">
+									<li class="widget uib_w_492" data-uib="app_framework/listitem" data-ver="1"><a>List Item</a>
+									</li>
+									<li class="widget uib_w_493" data-uib="app_framework/listitem" data-ver="1"><a>List Item</a>
+									</li>
+									<li class="widget uib_w_494" data-uib="app_framework/listitem" data-ver="1"><a>List Item</a>
+									</li>
+								</ul>
+								<ul class="list widget uib_w_495 d-margins" data-uib="app_framework/listview" data-ver="1">
+									<li class="widget uib_w_496" data-uib="app_framework/listitem" data-ver="1"><a>List Item</a>
+									</li>
+									<li class="widget uib_w_497" data-uib="app_framework/listitem" data-ver="1"><a>List Item</a>
+									</li>
+									<li class="widget uib_w_498" data-uib="app_framework/listitem" data-ver="1"><a>List Item</a>
+									</li>
+								</ul>
+								<ul class="list widget uib_w_499 d-margins" data-uib="app_framework/listview" data-ver="1">
+									<li class="widget uib_w_500" data-uib="app_framework/listitem" data-ver="1"><a>List Item</a>
+									</li>
+									<li class="widget uib_w_501" data-uib="app_framework/listitem" data-ver="1"><a>List Item</a>
+									</li>
+									<li class="widget uib_w_502" data-uib="app_framework/listitem" data-ver="1"><a>List Item</a>
+									</li>
+								</ul>
+								<ul class="list widget uib_w_503 d-margins" data-uib="app_framework/listview" data-ver="1">
+									<li class="widget uib_w_504" data-uib="app_framework/listitem" data-ver="1"><a>List Item</a>
+									</li>
+									<li class="widget uib_w_505" data-uib="app_framework/listitem" data-ver="1"><a>List Item</a>
+									</li>
+									<li class="widget uib_w_506" data-uib="app_framework/listitem" data-ver="1"><a>List Item</a>
+									</li>
+								</ul>
+								<ul class="list widget uib_w_507 d-margins" data-uib="app_framework/listview" data-ver="1">
+									<li class="widget uib_w_508" data-uib="app_framework/listitem" data-ver="1"><a>List Item</a>
+									</li>
+									<li class="widget uib_w_509" data-uib="app_framework/listitem" data-ver="1"><a>List Item</a>
+									</li>
+									<li class="widget uib_w_510" data-uib="app_framework/listitem" data-ver="1"><a>List Item</a>
+									</li>
+								</ul>
+								<ul class="list widget uib_w_511 d-margins" data-uib="app_framework/listview" data-ver="1">
+									<li class="widget uib_w_512" data-uib="app_framework/listitem" data-ver="1"><a>List Item</a>
+									</li>
+									<li class="widget uib_w_513" data-uib="app_framework/listitem" data-ver="1"><a>List Item</a>
+									</li>
+									<li class="widget uib_w_514" data-uib="app_framework/listitem" data-ver="1"><a>List Item</a>
+									</li>
+								</ul>
+								<ul class="list widget uib_w_515 d-margins" data-uib="app_framework/listview" data-ver="1">
+									<li class="widget uib_w_516" data-uib="app_framework/listitem" data-ver="1"><a>List Item</a>
+									</li>
+									<li class="widget uib_w_517" data-uib="app_framework/listitem" data-ver="1"><a>List Item</a>
+									</li>
+								</ul><span class="uib_shim"></span>
+							</div>
+						</div>
+						<span class="uib_shim"></span>
+					</div>
+				</div>
+				<div id="Parbhani" class="upage-content hidden">
+
+					<div class="grid grid-pad urow uib_row_76 row-height-76" data-uib="layout/row" data-ver="0">
+						<div class="col uib_col_87 col-0_12-12" data-uib="layout/col" data-ver="0">
+							<div class="widget-container content-area vertical-col">
+
+								<ul class="list widget uib_w_518 d-margins" data-uib="app_framework/listview" data-ver="1">
+									<li class="widget uib_w_519" data-uib="app_framework/listitem" data-ver="1"><a>08:15 AM</a>
+									</li>
+									<li class="widget uib_w_520" data-uib="app_framework/listitem" data-ver="1"><a>18:00   PM</a>
+									</li>
+								</ul><span class="uib_shim"></span>
+							</div>
+						</div>
+						<span class="uib_shim"></span>
+					</div>
+				</div>
+				<div id="Panjim" class="upage-content hidden">
+
+					<div class="grid grid-pad urow uib_row_77 row-height-77" data-uib="layout/row" data-ver="0">
+						<div class="col uib_col_88 col-0_12-12" data-uib="layout/col" data-ver="0">
+							<div class="widget-container content-area vertical-col">
+
+								<ul class="list widget uib_w_521 d-margins" data-uib="app_framework/listview" data-ver="1">
+									<li class="widget uib_w_522" data-uib="app_framework/listitem" data-ver="1"><a>List Item</a>
+									</li>
+									<li class="widget uib_w_523" data-uib="app_framework/listitem" data-ver="1"><a>List Item</a>
+									</li>
+									<li class="widget uib_w_524" data-uib="app_framework/listitem" data-ver="1"><a>List Item</a>
+									</li>
+								</ul>
+								<ul class="list widget uib_w_525 d-margins" data-uib="app_framework/listview" data-ver="1">
+									<li class="widget uib_w_526" data-uib="app_framework/listitem" data-ver="1"><a>List Item</a>
+									</li>
+									<li class="widget uib_w_527" data-uib="app_framework/listitem" data-ver="1"><a>List Item</a>
+									</li>
+									<li class="widget uib_w_528" data-uib="app_framework/listitem" data-ver="1"><a>List Item</a>
+									</li>
+								</ul>
+								<ul class="list widget uib_w_529 d-margins" data-uib="app_framework/listview" data-ver="1">
+									<li class="widget uib_w_530" data-uib="app_framework/listitem" data-ver="1"><a>List Item</a>
+									</li>
+									<li class="widget uib_w_531" data-uib="app_framework/listitem" data-ver="1"><a>List Item</a>
+									</li>
+									<li class="widget uib_w_532" data-uib="app_framework/listitem" data-ver="1"><a>List Item</a>
+									</li>
+								</ul>
+								<ul class="list widget uib_w_533 d-margins" data-uib="app_framework/listview" data-ver="1">
+									<li class="widget uib_w_534" data-uib="app_framework/listitem" data-ver="1"><a>List Item</a>
+									</li>
+									<li class="widget uib_w_535" data-uib="app_framework/listitem" data-ver="1"><a>List Item</a>
+									</li>
+									<li class="widget uib_w_536" data-uib="app_framework/listitem" data-ver="1"><a>List Item</a>
+									</li>
+								</ul><span class="uib_shim"></span>
+							</div>
+						</div>
+						<span class="uib_shim"></span>
+					</div>
+				</div>
+				<div id="Narsihwadi" class="upage-content hidden">
+
+					<div class="grid grid-pad urow uib_row_78 row-height-78" data-uib="layout/row" data-ver="0">
+						<div class="col uib_col_89 col-0_12-12" data-uib="layout/col" data-ver="0">
+							<div class="widget-container content-area vertical-col">
+
+								<ul class="list widget uib_w_537 d-margins" data-uib="app_framework/listview" data-ver="1">
+									<li class="widget uib_w_538" data-uib="app_framework/listitem" data-ver="1"><a>8:10 A.M. to 8:00 P.M.</a>
+									</li>
+									<li class="widget uib_w_539" data-uib="app_framework/listitem" data-ver="1"><a>after every 1/2 hour	</a>
+									</li>
+								</ul><span class="uib_shim"></span>
+							</div>
+						</div>
+						<span class="uib_shim"></span>
+					</div>
+				</div>
+				<div id="Mudhol" class="upage-content hidden">
+
+					<div class="grid grid-pad urow uib_row_79 row-height-79" data-uib="layout/row" data-ver="0">
+						<div class="col uib_col_90 col-0_12-12" data-uib="layout/col" data-ver="0">
+							<div class="widget-container content-area vertical-col">
+
+								<ul class="list widget uib_w_540 d-margins" data-uib="app_framework/listview" data-ver="1">
+									<li class="widget uib_w_541" data-uib="app_framework/listitem" data-ver="1"><a>7:00   AM</a>
+									</li>
+									<li class="widget uib_w_542" data-uib="app_framework/listitem" data-ver="1"><a>12:30   PM</a>
+									</li>
+									<li class="widget uib_w_543" data-uib="app_framework/listitem" data-ver="1"><a>15:00  PM</a>
+									</li>
+								</ul><span class="uib_shim"></span>
+							</div>
+						</div>
+						<span class="uib_shim"></span>
+					</div>
+				</div>
+				<div id="Miraj" class="upage-content hidden">
+				</div>
+				<div id="Latur" class="upage-content hidden">
+
+					<div class="grid grid-pad urow uib_row_80 row-height-80" data-uib="layout/row" data-ver="0">
+						<div class="col uib_col_91 col-0_12-12" data-uib="layout/col" data-ver="0">
+							<div class="widget-container content-area vertical-col">
+
+								<ul class="list widget uib_w_544 d-margins" data-uib="app_framework/listview" data-ver="1">
+									<li class="widget uib_w_545" data-uib="app_framework/listitem" data-ver="1"><a>07:00   AM</a>
+									</li>
+									<li class="widget uib_w_546" data-uib="app_framework/listitem" data-ver="1"><a>08:30   AM</a>
+									</li>
+									<li class="widget uib_w_547" data-uib="app_framework/listitem" data-ver="1"><a>19:30   PM</a>
+									</li>
+								</ul>
+								<ul class="list widget uib_w_548 d-margins" data-uib="app_framework/listview" data-ver="1">
+									<li class="widget uib_w_549" data-uib="app_framework/listitem" data-ver="1"><a>20:00      PM</a>
+									</li>
+									<li class="widget uib_w_550" data-uib="app_framework/listitem" data-ver="1"><a>22:30       PM</a>
+									</li>
+								</ul><span class="uib_shim"></span>
+							</div>
+						</div>
+						<span class="uib_shim"></span>
+					</div>
+				</div>
+				<div id="K-mahakal" class="upage-content hidden">
+
+					<div class="grid grid-pad urow uib_row_81 row-height-81" data-uib="layout/row" data-ver="0">
+						<div class="col uib_col_92 col-0_12-12" data-uib="layout/col" data-ver="0">
+							<div class="widget-container content-area vertical-col">
+
+								<ul class="list widget uib_w_551 d-margins" data-uib="app_framework/listview" data-ver="1">
+									<li class="widget uib_w_552" data-uib="app_framework/listitem" data-ver="1"><a>9:45   AM</a>
+									</li>
+									<li class="widget uib_w_553" data-uib="app_framework/listitem" data-ver="1"><a>10:15   AM</a>
+									</li>
+									<li class="widget uib_w_554" data-uib="app_framework/listitem" data-ver="1"><a>11:15    AM</a>
+									</li>
+								</ul><span class="uib_shim"></span>
+							</div>
+						</div>
+						<span class="uib_shim"></span>
+					</div>
+				</div>
+				<div id="Kagal" class="upage-content hidden">
+				</div>
+				<div id="Jat" class="upage-content hidden">
+
+					<div class="grid grid-pad urow uib_row_82 row-height-82" data-uib="layout/row" data-ver="0">
+						<div class="col uib_col_93 col-0_12-12" data-uib="layout/col" data-ver="0">
+							<div class="widget-container content-area vertical-col">
+
+								<ul class="list widget uib_w_555 d-margins" data-uib="app_framework/listview" data-ver="1">
+									<li class="widget uib_w_556" data-uib="app_framework/listitem" data-ver="1"><a>09:30  AM</a>
+									</li>
+									<li class="widget uib_w_557" data-uib="app_framework/listitem" data-ver="1"><a>10:30   AM</a>
+									</li>
+									<li class="widget uib_w_558" data-uib="app_framework/listitem" data-ver="1"><a>11:45     AM</a>
+									</li>
+								</ul>
+								<ul class="list widget uib_w_559 d-margins" data-uib="app_framework/listview" data-ver="1">
+									<li class="widget uib_w_560" data-uib="app_framework/listitem" data-ver="1"><a>13:30   PM</a>
+									</li>
+									<li class="widget uib_w_561" data-uib="app_framework/listitem" data-ver="1"><a>14:15    PM</a>
+									</li>
+									<li class="widget uib_w_562" data-uib="app_framework/listitem" data-ver="1"><a>16:30       PM</a>
+									</li>
+								</ul>
+								<ul class="list widget uib_w_563 d-margins" data-uib="app_framework/listview" data-ver="1">
+									<li class="widget uib_w_564" data-uib="app_framework/listitem" data-ver="1"><a>19:30    PM</a>
+									</li>
+								</ul><span class="uib_shim"></span>
+							</div>
+						</div>
+						<span class="uib_shim"></span>
+					</div>
+				</div>
+				<div id="Jalana" class="upage-content hidden">
+
+					<div class="grid grid-pad urow uib_row_83 row-height-83" data-uib="layout/row" data-ver="0">
+						<div class="col uib_col_94 col-0_12-12" data-uib="layout/col" data-ver="0">
+							<div class="widget-container content-area vertical-col">
+
+								<ul class="list widget uib_w_565 d-margins" data-uib="app_framework/listview" data-ver="1">
+									<li class="widget uib_w_566" data-uib="app_framework/listitem" data-ver="1"><a>9:00      AM</a>
+									</li>
+									<li class="widget uib_w_567" data-uib="app_framework/listitem" data-ver="1"><a>18:30    PM</a>
+									</li>
+								</ul><span class="uib_shim"></span>
+							</div>
+						</div>
+						<span class="uib_shim"></span>
+					</div>
+				</div>
+				<div id="Ichalkaranji" class="upage-content hidden">
+
+					<div class="grid grid-pad urow uib_row_84 row-height-84" data-uib="layout/row" data-ver="0">
+						<div class="col uib_col_95 col-0_12-12" data-uib="layout/col" data-ver="0">
+							<div class="widget-container content-area vertical-col">
+
+								<ul class="list widget uib_w_568 d-margins" data-uib="app_framework/listview" data-ver="1">
+									<li class="widget uib_w_569" data-uib="app_framework/listitem" data-ver="1"><a>07:00 AM</a>
+									</li>
+									<li class="widget uib_w_570" data-uib="app_framework/listitem" data-ver="1"><a>07:30 AM</a>
+									</li>
+									<li class="widget uib_w_571" data-uib="app_framework/listitem" data-ver="1"><a>List Item</a>
+									</li>
+								</ul>
+								<ul class="list widget uib_w_572 d-margins" data-uib="app_framework/listview" data-ver="1">
+									<li class="widget uib_w_573" data-uib="app_framework/listitem" data-ver="1"><a>List Item</a>
+									</li>
+									<li class="widget uib_w_574" data-uib="app_framework/listitem" data-ver="1"><a>List Item</a>
+									</li>
+									<li class="widget uib_w_575" data-uib="app_framework/listitem" data-ver="1"><a>List Item</a>
+									</li>
+								</ul>
+								<ul class="list widget uib_w_576 d-margins" data-uib="app_framework/listview" data-ver="1">
+									<li class="widget uib_w_577" data-uib="app_framework/listitem" data-ver="1"><a>List Item</a>
+									</li>
+									<li class="widget uib_w_578" data-uib="app_framework/listitem" data-ver="1"><a>List Item</a>
+									</li>
+									<li class="widget uib_w_579" data-uib="app_framework/listitem" data-ver="1"><a>List Item</a>
+									</li>
+								</ul>
+								<ul class="list widget uib_w_580 d-margins" data-uib="app_framework/listview" data-ver="1">
+									<li class="widget uib_w_581" data-uib="app_framework/listitem" data-ver="1"><a>List Item</a>
+									</li>
+									<li class="widget uib_w_582" data-uib="app_framework/listitem" data-ver="1"><a>List Item</a>
+									</li>
+									<li class="widget uib_w_583" data-uib="app_framework/listitem" data-ver="1"><a>List Item</a>
+									</li>
+								</ul>
+								<ul class="list widget uib_w_584 d-margins" data-uib="app_framework/listview" data-ver="1">
+									<li class="widget uib_w_585" data-uib="app_framework/listitem" data-ver="1"><a>List Item</a>
+									</li>
+								</ul><span class="uib_shim"></span>
+							</div>
+						</div>
+						<span class="uib_shim"></span>
+					</div>
+				</div>
+				<div id="Hyderabad" class="upage-content hidden">
+
+					<div class="grid grid-pad urow uib_row_85 row-height-85" data-uib="layout/row" data-ver="0">
+						<div class="col uib_col_96 col-0_12-12" data-uib="layout/col" data-ver="0">
+							<div class="widget-container content-area vertical-col">
+
+								<ul class="list widget uib_w_586 d-margins" data-uib="app_framework/listview" data-ver="1">
+									<li class="widget uib_w_587" data-uib="app_framework/listitem" data-ver="1"><a>19:00  PM</a>
+									</li>
+								</ul><span class="uib_shim"></span>
+							</div>
+						</div>
+						<span class="uib_shim"></span>
+					</div>
+				</div>
+				<div id="Gorpadi" class="upage-content hidden">
+
+					<div class="grid grid-pad urow uib_row_86 row-height-86" data-uib="layout/row" data-ver="0">
+						<div class="col uib_col_97 col-0_12-12" data-uib="layout/col" data-ver="0">
+							<div class="widget-container content-area vertical-col">
+
+								<ul class="list widget uib_w_588 d-margins" data-uib="app_framework/listview" data-ver="1">
+									<li class="widget uib_w_589" data-uib="app_framework/listitem" data-ver="1"><a>15:00    PM</a>
+									</li>
+									<li class="widget uib_w_590" data-uib="app_framework/listitem" data-ver="1"><a>16:00     PM</a>
+									</li>
+								</ul><span class="uib_shim"></span>
+							</div>
+						</div>
+						<span class="uib_shim"></span>
+					</div>
+				</div>
+				<div id="Gandgapur" class="upage-content hidden">
+
+					<div class="grid grid-pad urow uib_row_87 row-height-87" data-uib="layout/row" data-ver="0">
+						<div class="col uib_col_98 col-0_12-12" data-uib="layout/col" data-ver="0">
+							<div class="widget-container content-area vertical-col">
+
+								<ul class="list widget uib_w_591 d-margins" data-uib="app_framework/listview" data-ver="1">
+									<li class="widget uib_w_592" data-uib="app_framework/listitem" data-ver="1"><a>06:15   AM</a>
+									</li>
+									<li class="widget uib_w_593" data-uib="app_framework/listitem" data-ver="1"><a>10:45    AM</a>
+									</li>
+									<li class="widget uib_w_594" data-uib="app_framework/listitem" data-ver="1"><a>12:30  PM</a>
+									</li>
+								</ul>
+								<ul class="list widget uib_w_595 d-margins" data-uib="app_framework/listview" data-ver="1">
+									<li class="widget uib_w_596" data-uib="app_framework/listitem" data-ver="1"><a>13:00   PM</a>
+									</li>
+									<li class="widget uib_w_597" data-uib="app_framework/listitem" data-ver="1"><a>14:00    PM</a>
+									</li>
+									<li class="widget uib_w_598" data-uib="app_framework/listitem" data-ver="1"><a>23:00  PM</a>
+									</li>
+								</ul><span class="uib_shim"></span>
+							</div>
+						</div>
+						<span class="uib_shim"></span>
+					</div>
+				</div>
+				<div id="Gadhinglaj" class="upage-content hidden">
+
+					<div class="grid grid-pad urow uib_row_88 row-height-88" data-uib="layout/row" data-ver="0">
+						<div class="col uib_col_99 col-0_12-12" data-uib="layout/col" data-ver="0">
+							<div class="widget-container content-area vertical-col">
+
+								<ul class="list widget uib_w_599 d-margins" data-uib="app_framework/listview" data-ver="1">
+									<li class="widget uib_w_600" data-uib="app_framework/listitem" data-ver="1"><a>8:45   AM</a>
+									</li>
+								</ul>
+								<ul class="list widget uib_w_736 d-margins" data-uib="app_framework/listview" data-ver="1">
+									<li class="widget uib_w_737" data-uib="app_framework/listitem" data-ver="1"><a>9:15 AM</a>
+									</li>
+									<li class="widget uib_w_738" data-uib="app_framework/listitem" data-ver="1"><a>List Item</a>
+									</li>
+									<li class="widget uib_w_739" data-uib="app_framework/listitem" data-ver="1"><a>List Item</a>
+									</li>
+								</ul><span class="uib_shim"></span>
+							</div>
+						</div>
+						<span class="uib_shim"></span>
+					</div>
+				</div>
+				<div id="Chandgad" class="upage-content hidden">
+
+					<div class="grid grid-pad urow uib_row_89 row-height-89" data-uib="layout/row" data-ver="0">
+						<div class="col uib_col_100 col-0_12-12" data-uib="layout/col" data-ver="0">
+							<div class="widget-container content-area vertical-col">
+
+								<ul class="list widget uib_w_601 d-margins" data-uib="app_framework/listview" data-ver="1">
+									<li class="widget uib_w_602" data-uib="app_framework/listitem" data-ver="1"><a>06:30   AM</a>
+									</li>
+									<li class="widget uib_w_603" data-uib="app_framework/listitem" data-ver="1"><a>09:00   AM</a>
+									</li>
+									<li class="widget uib_w_604" data-uib="app_framework/listitem" data-ver="1"><a>18:45    PM</a>
+									</li>
+								</ul>
+								<ul class="list widget uib_w_605 d-margins" data-uib="app_framework/listview" data-ver="1">
+									<li class="widget uib_w_606" data-uib="app_framework/listitem" data-ver="1"><a>19:30    PM</a>
+									</li>
+								</ul><span class="uib_shim"></span>
+							</div>
+						</div>
+						<span class="uib_shim"></span>
+					</div>
+				</div>
+				<div id="Beed" class="upage-content hidden">
+
+					<div class="grid grid-pad urow uib_row_90 row-height-90" data-uib="layout/row" data-ver="0">
+						<div class="col uib_col_101 col-0_12-12" data-uib="layout/col" data-ver="0">
+							<div class="widget-container content-area vertical-col">
+
+								<ul class="list widget uib_w_607 d-margins" data-uib="app_framework/listview" data-ver="1">
+									<li class="widget uib_w_608" data-uib="app_framework/listitem" data-ver="1"><a>06:30  AM</a>
+									</li>
+									<li class="widget uib_w_609" data-uib="app_framework/listitem" data-ver="1"><a>09:00  AM</a>
+									</li>
+									<li class="widget uib_w_610" data-uib="app_framework/listitem" data-ver="1"><a>18:45    PM</a>
+									</li>
+								</ul>
+								<ul class="list widget uib_w_611 d-margins" data-uib="app_framework/listview" data-ver="1">
+									<li class="widget uib_w_612" data-uib="app_framework/listitem" data-ver="1"><a>19:30     PM</a>
+									</li>
+								</ul><span class="uib_shim"></span>
+							</div>
+						</div>
+						<span class="uib_shim"></span>
+					</div>
+				</div>
+				<div id="Barshi" class="upage-content hidden">
+
+					<div class="grid grid-pad urow uib_row_91 row-height-91" data-uib="layout/row" data-ver="0">
+						<div class="col uib_col_102 col-0_12-12" data-uib="layout/col" data-ver="0">
+							<div class="widget-container content-area vertical-col">
+
+								<ul class="list widget uib_w_613 d-margins" data-uib="app_framework/listview" data-ver="1">
+									<li class="widget uib_w_614" data-uib="app_framework/listitem" data-ver="1"><a>6:45   AM</a>
+									</li>
+									<li class="widget uib_w_615" data-uib="app_framework/listitem" data-ver="1"><a>12:30     PM</a>
+									</li>
+									<li class="widget uib_w_616" data-uib="app_framework/listitem" data-ver="1"><a>15:00   PM</a>
+									</li>
+								</ul>
+								<ul class="list widget uib_w_617 d-margins" data-uib="app_framework/listview" data-ver="1">
+									<li class="widget uib_w_618" data-uib="app_framework/listitem" data-ver="1"><a>15:30   PM</a>
+									</li>
+									<li class="widget uib_w_619" data-uib="app_framework/listitem" data-ver="1"><a>17:00   PM</a>
+									</li>
+								</ul><span class="uib_shim"></span>
+							</div>
+						</div>
+						<span class="uib_shim"></span>
+					</div>
+				</div>
+				<div id="Bagal-kot" class="upage-content hidden">
+
+					<div class="grid grid-pad urow uib_row_92 row-height-92" data-uib="layout/row" data-ver="0">
+						<div class="col uib_col_103 col-0_12-12" data-uib="layout/col" data-ver="0">
+							<div class="widget-container content-area vertical-col">
+
+								<ul class="list widget uib_w_620 d-margins" data-uib="app_framework/listview" data-ver="1">
+									<li class="widget uib_w_621" data-uib="app_framework/listitem" data-ver="1"><a>7:00  AM</a>
+									</li>
+									<li class="widget uib_w_622" data-uib="app_framework/listitem" data-ver="1"><a>13:15   PM</a>
+									</li>
+								</ul><span class="uib_shim"></span>
+							</div>
+						</div>
+						<span class="uib_shim"></span>
+					</div>
+				</div>
+				<div id="Aatpadi" class="upage-content hidden">
+
+					<div class="grid grid-pad urow uib_row_93 row-height-93" data-uib="layout/row" data-ver="0">
+						<div class="col uib_col_104 col-0_12-12" data-uib="layout/col" data-ver="0">
+							<div class="widget-container content-area vertical-col">
+
+								<ul class="list widget uib_w_623 d-margins" data-uib="app_framework/listview" data-ver="1">
+									<li class="widget uib_w_624" data-uib="app_framework/listitem" data-ver="1"><a>11:30    AM</a>
+									</li>
+									<li class="widget uib_w_625" data-uib="app_framework/listitem" data-ver="1"><a>12:15     PM</a>
+									</li>
+									<li class="widget uib_w_626" data-uib="app_framework/listitem" data-ver="1"><a>13:30       PM</a>
+									</li>
+								</ul><span class="uib_shim"></span>
+							</div>
+						</div>
+						<span class="uib_shim"></span>
+					</div>
+				</div>
+				<div id="Aaklug" class="upage-content hidden">
+
+					<div class="grid grid-pad urow uib_row_94 row-height-94" data-uib="layout/row" data-ver="0">
+						<div class="col uib_col_105 col-0_12-12" data-uib="layout/col" data-ver="0">
+							<div class="widget-container content-area vertical-col">
+
+								<ul class="list widget uib_w_627 d-margins" data-uib="app_framework/listview" data-ver="1">
+									<li class="widget uib_w_628" data-uib="app_framework/listitem" data-ver="1"><a>08:00     AM</a>
+									</li>
+									<li class="widget uib_w_629" data-uib="app_framework/listitem" data-ver="1"><a>09:30    AM</a>
+									</li>
+
+								</ul><span class="uib_shim"></span>
+							</div>
+						</div>
+						<span class="uib_shim"></span>
+					</div>
+				</div>
+				<div id="Aakkalkoth" class="upage-content hidden">
+
+					<div class="grid grid-pad urow uib_row_95 row-height-95" data-uib="layout/row" data-ver="0">
+						<div class="col uib_col_106 col-0_12-12" data-uib="layout/col" data-ver="0">
+							<div class="widget-container content-area vertical-col">
+
+								<ul class="list widget uib_w_630 d-margins" data-uib="app_framework/listview" data-ver="1">
+									<li class="widget uib_w_631" data-uib="app_framework/listitem" data-ver="1"><a>List Item</a>
+									</li>
+									<li class="widget uib_w_632" data-uib="app_framework/listitem" data-ver="1"><a>List Item</a>
+									</li>
+									<li class="widget uib_w_633" data-uib="app_framework/listitem" data-ver="1"><a>List Item</a>
+									</li>
+								</ul>
+								<ul class="list widget uib_w_634 d-margins" data-uib="app_framework/listview" data-ver="1">
+									<li class="widget uib_w_635" data-uib="app_framework/listitem" data-ver="1"><a>List Item</a>
+									</li>
+									<li class="widget uib_w_636" data-uib="app_framework/listitem" data-ver="1"><a>List Item</a>
+									</li>
+									<li class="widget uib_w_637" data-uib="app_framework/listitem" data-ver="1"><a>List Item</a>
+									</li>
+								</ul>
+								<ul class="list widget uib_w_638 d-margins" data-uib="app_framework/listview" data-ver="1">
+									<li class="widget uib_w_639" data-uib="app_framework/listitem" data-ver="1"><a>List Item</a>
+									</li>
+									<li class="widget uib_w_640" data-uib="app_framework/listitem" data-ver="1"><a>List Item</a>
+									</li>
+									<li class="widget uib_w_641" data-uib="app_framework/listitem" data-ver="1"><a>List Item</a>
+									</li>
+								</ul><span class="uib_shim"></span>
+							</div>
+						</div>
+						<span class="uib_shim"></span>
+					</div>
+				</div>
+				<div id="Aajra" class="upage-content hidden">
+
+					<div class="grid grid-pad urow uib_row_96 row-height-96" data-uib="layout/row" data-ver="0">
+						<div class="col uib_col_107 col-0_12-12" data-uib="layout/col" data-ver="0">
+							<div class="widget-container content-area vertical-col">
+
+								<ul class="list widget uib_w_642 d-margins" data-uib="app_framework/listview" data-ver="1">
+									<li class="widget uib_w_643" data-uib="app_framework/listitem" data-ver="1"><a>List Item</a>
+									</li>
+									<li class="widget uib_w_644" data-uib="app_framework/listitem" data-ver="1"><a>List Item</a>
+									</li>
+									<li class="widget uib_w_645" data-uib="app_framework/listitem" data-ver="1"><a>List Item</a>
+									</li>
+								</ul>
+								<ul class="list widget uib_w_646 d-margins" data-uib="app_framework/listview" data-ver="1">
+									<li class="widget uib_w_647" data-uib="app_framework/listitem" data-ver="1"><a>List Item</a>
+									</li>
+									<li class="widget uib_w_648" data-uib="app_framework/listitem" data-ver="1"><a>List Item</a>
+									</li>
+									<li class="widget uib_w_649" data-uib="app_framework/listitem" data-ver="1"><a>List Item</a>
+									</li>
+								</ul>
+								<ul class="list widget uib_w_650 d-margins" data-uib="app_framework/listview" data-ver="1">
+									<li class="widget uib_w_651" data-uib="app_framework/listitem" data-ver="1"><a>List Item</a>
+									</li>
+									<li class="widget uib_w_652" data-uib="app_framework/listitem" data-ver="1"><a>List Item</a>
+									</li>
+									<li class="widget uib_w_653" data-uib="app_framework/listitem" data-ver="1"><a>List Item</a>
+									</li>
+								</ul>
+								<ul class="list widget uib_w_654 d-margins" data-uib="app_framework/listview" data-ver="1">
+									<li class="widget uib_w_655" data-uib="app_framework/listitem" data-ver="1"><a>List Item</a>
+									</li>
+								</ul><span class="uib_shim"></span>
+							</div>
+						</div>
+						<span class="uib_shim"></span>
+					</div>
+				</div>
+				<div id="Aahamadpur" class="upage-content hidden">
+
+					<div class="grid grid-pad urow uib_row_70 row-height-70" data-uib="layout/row" data-ver="0">
+						<div class="col uib_col_81 col-0_12-12" data-uib="layout/col" data-ver="0">
+							<div class="widget-container content-area vertical-col">
+
+								<ul class="list widget uib_w_414 d-margins" data-uib="app_framework/listview" data-ver="1">
+									<li class="widget uib_w_415 6 1" data-uib="app_framework/listitem" data-ver="1"><a>7:00am</a>
+									</li>
+								</ul>
+								<ul class="list widget uib_w_732 d-margins" data-uib="app_framework/listview" data-ver="1">
+									<li class="widget uib_w_733" data-uib="app_framework/listitem" data-ver="1"><a>List Item</a>
+									</li>
+									<li class="widget uib_w_734" data-uib="app_framework/listitem" data-ver="1"><a>List Item</a>
+									</li>
+									<li class="widget uib_w_735" data-uib="app_framework/listitem" data-ver="1"><a>List Item</a>
+									</li>
+								</ul><span class="uib_shim"></span>
+							</div>
+						</div>
+						<span class="uib_shim"></span>
+					</div>
+				</div>
+				<div id="outgoing" class="upage-content hidden">
+
+					<div class="grid grid-pad urow uib_row_69 row-height-69" data-uib="layout/row" data-ver="0">
+						<div class="col uib_col_80 col-0_12-12" data-uib="layout/col" data-ver="0">
+							<div class="widget-container content-area vertical-col">
+
+								<ul class="list widget uib_w_357 d-margins" data-uib="app_framework/listview" data-ver="1">
+									<li class="widget uib_w_358" data-uib="app_framework/listitem" data-ver="1"><a>11012		Mahalaxmi Express </a>
+									</li>
+									<li class="widget uib_w_359" data-uib="app_framework/listitem" data-ver="1"><a>11024		Sahyadri Express</a>
+									</li>
+									<li class="widget uib_w_360" data-uib="app_framework/listitem" data-ver="1"><a>11030		Koyna Express </a>
+									</li>
+								</ul>
+								<ul class="list widget uib_w_361 d-margins" data-uib="app_framework/listview" data-ver="1">
+									<li class="widget uib_w_362" data-uib="app_framework/listitem" data-ver="1"><a>11039		CSMT Kolhapur-Gorakhpur Link Express</a>
+									</li>
+									<li class="widget uib_w_363" data-uib="app_framework/listitem" data-ver="1"><a>11039		Maharashtra Express </a>
+									</li>
+									<li class="widget uib_w_364" data-uib="app_framework/listitem" data-ver="1"><a>11045		Deekshabhoomi Express</a>
+									</li>
+								</ul>
+								<ul class="list widget uib_w_365 d-margins" data-uib="app_framework/listview" data-ver="1">
+									<li class="widget uib_w_366" data-uib="app_framework/listitem" data-ver="1"><a>11050		Kolhapur-Ahmedabad Express</a>
+									</li>
+									<li class="widget uib_w_367" data-uib="app_framework/listitem" data-ver="1"><a>11052		Kolhapur Solapur Express</a>
+									</li>
+									<li class="widget uib_w_368" data-uib="app_framework/listitem" data-ver="1"><a>11404		Kolhapur-Nagpur Express</a>
+									</li>
+								</ul>
+								<ul class="list widget uib_w_369 d-margins" data-uib="app_framework/listview" data-ver="1">
+									<li class="widget uib_w_370" data-uib="app_framework/listitem" data-ver="1"><a>11608		KOP MRJ PASSENGER</a>
+									</li>
+									<li class="widget uib_w_371" data-uib="app_framework/listitem" data-ver="1"><a>11622		KOP PUNE PASSENGER</a>
+									</li>
+									<li class="widget uib_w_372" data-uib="app_framework/listitem" data-ver="1"><a>11628		KOP MRJ PASSENGER</a>
+									</li>
+								</ul>
+								<ul class="list widget uib_w_373 d-margins" data-uib="app_framework/listview" data-ver="1">
+									<li class="widget uib_w_374" data-uib="app_framework/listitem" data-ver="1"><a>11630		KOP SLI PASSENGER</a>
+									</li>
+									<li class="widget uib_w_375" data-uib="app_framework/listitem" data-ver="1"><a>12147		Kolhapur-H.Nizamuddin SF Express</a>
+									</li>
+									<li class="widget uib_w_376" data-uib="app_framework/listitem" data-ver="1"><a>16590		Rani Chennamma Express </a>
+									</li>
+								</ul>
+								<ul class="list widget uib_w_377 d-margins" data-uib="app_framework/listview" data-ver="1">
+									<li class="widget uib_w_378" data-uib="app_framework/listitem" data-ver="1"><a>17004		Kolhapur - Hyderabad Express</a>
+									</li>
+									<li class="widget uib_w_379" data-uib="app_framework/listitem" data-ver="1"><a>17416		Haripriya Express </a>
+									</li>
+									<li class="widget uib_w_380" data-uib="app_framework/listitem" data-ver="1"><a>51408		Kolhapur Miraj Passenger </a>
+									</li>
+								</ul>
+								<ul class="list widget uib_w_381 d-margins" data-uib="app_framework/listview" data-ver="1">
+									<li class="widget uib_w_382" data-uib="app_framework/listitem" data-ver="1"><a>51410		Shree Chatrapati Shahu M(T) Kolhapur- Pune Passenger</a>
+									</li>
+									<li class="widget uib_w_383" data-uib="app_framework/listitem" data-ver="1"><a>51428		Kolhapur - Miraj Passenger</a>
+									</li>
+									<li class="widget uib_w_384" data-uib="app_framework/listitem" data-ver="1"><a>51430		Kolhapur - Sangli Passenger</a>
+									</li>
+								</ul>
+								<ul class="list widget uib_w_385 d-margins" data-uib="app_framework/listview" data-ver="1">
+									<li class="widget uib_w_386" data-uib="app_framework/listitem" data-ver="1"><a>51442		CSMT Kolhapur-Satara Passenger</a>
+									</li>
+								</ul><span class="uib_shim"></span>
+							</div>
+						</div>
+						<span class="uib_shim"></span>
+					</div>
+				</div>
+				<div id="uib_page_26" class="upage-content hidden">
+
+					<div class="grid grid-pad urow uib_row_68 row-height-68 bar-bg" data-uib="layout/row" data-ver="0">
+						<div class="col uib_col_79 col-0_12-12 7" data-uib="layout/col" data-ver="0">
+							<div class="widget-container content-area vertical-col">
+
+								<ul class="list widget uib_w_285 d-margins" data-uib="app_framework/listview" data-ver="1">
+									<li class="widget uib_w_286" data-uib="app_framework/listitem" data-ver="1"><a>South Indian Dishesh </a>
+									</li>
+									<li class="widget uib_w_287" data-uib="app_framework/listitem" data-ver="1"><a>Misal</a>
+									</li>
+									<li class="widget uib_w_288" data-uib="app_framework/listitem" data-ver="1"><a>Tambda- Pandhra Rassa</a>
+									</li>
+								</ul>
+								<ul class="list widget uib_w_289 d-margins" data-uib="app_framework/listview" data-ver="1">
+									<li class="widget uib_w_290" data-uib="app_framework/listitem" data-ver="1"><a>Bhel</a>
+									</li>
+									<li class="widget uib_w_291" data-uib="app_framework/listitem" data-ver="1"><a>Sandwich(Veg)</a>
+									</li>
+									<li class="widget uib_w_292" data-uib="app_framework/listitem" data-ver="1"><a>Pav-Bhaji</a>
+									</li>
+								</ul>
+								<ul class="list widget uib_w_293 d-margins" data-uib="app_framework/listview" data-ver="1">
+									<li class="widget uib_w_294" data-uib="app_framework/listitem" data-ver="1"><a>Ice-cream</a>
+									</li>
+									<li class="widget uib_w_295" data-uib="app_framework/listitem" data-ver="1"><a>Berger /Pizza</a>
+									</li>
+									<li class="widget uib_w_296" data-uib="app_framework/listitem" data-ver="1"><a>Batate Wada</a>
+									</li>
+								</ul>
+								<ul class="list widget uib_w_297 d-margins" data-uib="app_framework/listview" data-ver="1">
+									<li class="widget uib_w_298" data-uib="app_framework/listitem" data-ver="1"><a>Chinise</a>
+									</li>
+								</ul><span class="uib_shim"></span>
+							</div>
+						</div>
+						<span class="uib_shim"></span>
+					</div>
+				</div>
+				<div id="uib_page_25" class="upage-content hidden">
+
+					<div class="grid grid-pad urow uib_row_64 row-height-64" data-uib="layout/row" data-ver="0">
+						<div class="col uib_col_75 col-0_12-12" data-uib="layout/col" data-ver="0">
+							<div class="widget-container content-area vertical-col">
+
+								<div class="grid grid-pad urow uib_row_65 row-height-65" data-uib="layout/row" data-ver="0">
+									<div class="col uib_col_76 col-1_12-12" data-uib="layout/col" data-ver="0">
+										<div class="widget-container content-area vertical-col">
+											<span class="uib_shim"></span>
+										</div>
+									</div>
+									<span class="uib_shim"></span>
+								</div>
+								<div class="button-grouped flex widget uib_w_281 d-margins" data-uib="app_framework/button_group" data-ver="1"><a class="button widget uib_w_282 green" data-uib="app_framework/button" data-ver="1" style="border-left-width: 1px; border-left-style: solid; border-left-color: rgb(102, 102, 102); border-top-left-radius: 6px; border-bottom-left-radius: 6px;">Veg Meals (Maharashtra)</a>
+								</div>
+								<div class="grid grid-pad urow uib_row_66 row-height-66" data-uib="layout/row" data-ver="0">
+									<div class="col uib_col_77 col-1_12-12" data-uib="layout/col" data-ver="0">
+										<div class="widget-container content-area vertical-col">
+											<span class="uib_shim"></span>
+										</div>
+									</div>
+									<span class="uib_shim"></span>
+								</div><a class="button widget uib_w_283 green" data-uib="app_framework/button" data-ver="1">Panjabi</a>
+								<div class="grid grid-pad urow uib_row_67 row-height-67" data-uib="layout/row" data-ver="0">
+									<div class="col uib_col_78 col-1_12-12" data-uib="layout/col" data-ver="0">
+										<div class="widget-container content-area vertical-col">
+											<span class="uib_shim"></span>
+										</div>
+									</div>
+									<span class="uib_shim"></span>
+								</div><a class="button widget uib_w_284 green" data-uib="app_framework/button" data-ver="1" style="border-top-right-radius: 6px; border-bottom-right-radius: 6px;">Gujarathi</a><span class="uib_shim"></span>
+							</div>
+						</div>
+						<span class="uib_shim"></span>
+					</div>
+				</div>
+				<div id="uib_page_24" class="upage-content hidden">
+
+					<div class="grid grid-pad urow uib_row_62 row-height-62" data-uib="layout/row" data-ver="0">
+						<div class="col uib_col_73 col-0_12-12" data-uib="layout/col" data-ver="0">
+							<div class="widget-container content-area vertical-col">
+
+								<ul class="list widget uib_w_265 d-margins" data-uib="app_framework/listview" data-ver="1">
+									<li class="widget uib_w_266" data-uib="app_framework/listitem" data-ver="1"><a>HOTEL VRISHALI EXECUTIVE</a>
+									</li>
+									<li class="widget uib_w_267" data-uib="app_framework/listitem" data-ver="1"><a>HOTEL WOODLAND</a>
+									</li>
+									<li class="widget uib_w_268" data-uib="app_framework/listitem" data-ver="1"><a>HOTEL RAYSONS</a>
+									</li>
+								</ul>
+								<ul class="list widget uib_w_269 d-margins" data-uib="app_framework/listview" data-ver="1">
+									<li class="widget uib_w_270" data-uib="app_framework/listitem" data-ver="1"><a>HOTEL TOURIST</a>
+									</li>
+									<li class="widget uib_w_271" data-uib="app_framework/listitem" data-ver="1"><a>HOTEL PEARL</a>
+									</li>
+									<li class="widget uib_w_272" data-uib="app_framework/listitem" data-ver="1"><a>HOTEL VICTOR  PALACE</a>
+									</li>
+								</ul>
+								<ul class="list widget uib_w_273 d-margins" data-uib="app_framework/listview" data-ver="1">
+									<li class="widget uib_w_274" data-uib="app_framework/listitem" data-ver="1"><a>HOTEL RAJAT</a>
+									</li>
+									<li class="widget uib_w_275" data-uib="app_framework/listitem" data-ver="1"><a>HOTEL MAHARAJA</a>
+									</li>
+									<li class="widget uib_w_276" data-uib="app_framework/listitem" data-ver="1"><a>HOTEL PANCHSHIL</a>
+									</li>
+								</ul>
+								<ul class="list widget uib_w_277 d-margins" data-uib="app_framework/listview" data-ver="1">
+									<li class="widget uib_w_278" data-uib="app_framework/listitem" data-ver="1"><a>HOTEL AYODHYA</a>
+									</li>
+									<li class="widget uib_w_279" data-uib="app_framework/listitem" data-ver="1"><a>HOTEL INTERNATIONAL</a>
+									</li>
+									<li class="widget uib_w_280" data-uib="app_framework/listitem" data-ver="1"><a>HOTEL YATRI NIWAS</a>
+									</li>
+								</ul><span class="uib_shim"></span>
+							</div>
+						</div>
+						<span class="uib_shim"></span>
+					</div>
+				</div>
+				<div id="uib_page_23" class="upage-content hidden">
+
+					<div class="grid grid-pad urow uib_row_57 row-height-57" data-uib="layout/row" data-ver="0">
+						<div class="col uib_col_68 col-0_12-12" data-uib="layout/col" data-ver="0">
+							<div class="widget-container content-area vertical-col">
+
+								<div class="grid grid-pad urow uib_row_59 row-height-59" data-uib="layout/row" data-ver="0">
+									<div class="col uib_col_70 col-1_12-12" data-uib="layout/col" data-ver="0">
+										<div class="widget-container content-area vertical-col">
+											<span class="uib_shim"></span>
+										</div>
+									</div>
+									<span class="uib_shim"></span>
+								</div>
+								<div class="button-grouped widget uib_w_261 d-margins flex" data-uib="app_framework/button_group" data-ver="1"><a class="button widget uib_w_262 orange" data-uib="app_framework/button" data-ver="1" style="border-left-width: 1px; border-left-style: solid; border-left-color: rgb(102, 102, 102); border-top-left-radius: 6px; border-bottom-left-radius: 6px; border-top-right-radius: 6px; border-bottom-right-radius: 6px;">Hotels</a>
+								</div>
+								<div class="grid grid-pad urow uib_row_60 row-height-60" data-uib="layout/row" data-ver="0">
+									<div class="col uib_col_71 col-1_12-12" data-uib="layout/col" data-ver="0">
+										<div class="widget-container content-area vertical-col">
+											<span class="uib_shim"></span>
+										</div>
+									</div>
+									<span class="uib_shim"></span>
+								</div><a class="button widget uib_w_264 green" data-uib="app_framework/button" data-ver="1" style="border-top-right-radius: 6px; border-bottom-right-radius: 6px;">Meal</a>
+								<div class="grid grid-pad urow uib_row_61 row-height-61" data-uib="layout/row" data-ver="0">
+									<div class="col uib_col_72 col-1_12-12" data-uib="layout/col" data-ver="0">
+										<div class="widget-container content-area vertical-col">
+											<span class="uib_shim"></span>
+										</div>
+									</div>
+									<span class="uib_shim"></span>
+								</div><a class="button widget uib_w_263 red" data-uib="app_framework/button" data-ver="1">Other Menu</a><span class="uib_shim"></span>
+							</div>
+						</div>
+						<span class="uib_shim"></span>
+					</div>
+
+				</div>
+				<div id="uib_page_22" class="upage-content hidden">
+
+					<div class="grid grid-pad urow uib_row_53 row-height-53" data-uib="layout/row" data-ver="0">
+						<div class="col uib_col_60 col-0_12-12" data-uib="layout/col" data-ver="0">
+							<div class="widget-container content-area vertical-col">
+
+								<ul class="list widget uib_w_234 d-margins" data-uib="app_framework/listview" data-ver="1">
+									<li class="widget uib_w_235" data-uib="app_framework/listitem" data-ver="1"><a>11011  Mahalaxmi Express </a>
+									</li>
+									<li class="widget uib_w_236" data-uib="app_framework/listitem" data-ver="1"><a>11023   Sahyadri Express</a>
+									</li>
+									<li class="widget uib_w_237" data-uib="app_framework/listitem" data-ver="1"><a>11029   Koyna Express </a>
+									</li>
+								</ul>
+								<ul class="list widget uib_w_238 d-margins" data-uib="app_framework/listview" data-ver="1">
+									<li class="widget uib_w_239" data-uib="app_framework/listitem" data-ver="1"><a>11040     Maharashtra Express</a>
+									</li>
+									<li class="widget uib_w_244" data-uib="app_framework/listitem" data-ver="1"><a>11046 Deekshabhoomi Express</a>
+									</li>
+									<li class="widget uib_w_240" data-uib="app_framework/listitem" data-ver="1"><a>11049    Ahmedabad-Kolhapur   Express</a>
+									</li>
+									<li class="widget uib_w_241" data-uib="app_framework/listitem" data-ver="1"><a>11051 Solapur-Kolhapur Express</a>
+									</li>
+								</ul>
+								<ul class="list widget uib_w_345 d-margins" data-uib="app_framework/listview" data-ver="1">
+									<li class="widget uib_w_346" data-uib="app_framework/listitem" data-ver="1"><a>11403		Nagpur-Kolhapur Express</a>
+									</li>
+								</ul>
+								<ul class="list widget uib_w_242 d-margins" data-uib="app_framework/listview" data-ver="1">
+									<li class="widget uib_w_243" data-uib="app_framework/listitem" data-ver="1"><a>12148  H.Nizamuddin-CSMT Kolhapur Express</a>
+									</li>
+									<li class="widget uib_w_347" data-uib="app_framework/listitem" data-ver="1"><a>15018	                Gorakhpur - Kolhapur Express Slip</a>
+									</li>
+									<li class="widget uib_w_245" data-uib="app_framework/listitem" data-ver="1"><a>16589  Rani Chennamma Express</a>
+									</li>
+									<li class="widget uib_w_348" data-uib="app_framework/listitem" data-ver="1"><a>17003		Hyderabad-Kolhapur Express </a>
+									</li>
+								</ul>
+								<ul class="list widget uib_w_349 d-margins" data-uib="app_framework/listview" data-ver="1">
+									<li class="widget uib_w_350" data-uib="app_framework/listitem" data-ver="1"><a>17415		Haripriya Express </a>
+									</li>
+									<li class="widget uib_w_351" data-uib="app_framework/listitem" data-ver="1"><a>51407		Miraj-Kolhapur Passenger</a>
+									</li>
+									<li class="widget uib_w_352" data-uib="app_framework/listitem" data-ver="1"><a>51409		Pune -Shree Chatrapati Shahu M(T) Kolhapur Passenger</a>
+									</li>
+								</ul>
+								<ul class="list widget uib_w_353 d-margins" data-uib="app_framework/listview" data-ver="1">
+									<li class="widget uib_w_354" data-uib="app_framework/listitem" data-ver="1"><a>51427		Miraj C Shahu Maharaj Passenger</a>
+									</li>
+									<li class="widget uib_w_355" data-uib="app_framework/listitem" data-ver="1"><a>51429		Sangli-Kolhapur Passenger</a>
+									</li>
+									<li class="widget uib_w_356" data-uib="app_framework/listitem" data-ver="1"><a>51441		Satara-CSMT Kolhapur Passenger</a>
+									</li>
+								</ul><span class="uib_shim"></span>
+							</div>
+						</div>
+						<span class="uib_shim"></span>
+					</div>
+				</div>
+
+				<div id="uib_page_20" class="upage-content hidden">
+
+					<div class="grid grid-pad urow uib_row_52 row-height-52" data-uib="layout/row" data-ver="0">
+						<div class="col uib_col_59 col-0_12-12" data-uib="layout/col" data-ver="0">
+							<div class="widget-container content-area vertical-col center">
+
+								<ul class="list widget uib_w_218 d-margins" data-uib="app_framework/listview" data-ver="1">
+									<li class="widget uib_w_219" data-uib="app_framework/listitem" data-ver="1"><a>Aahamadpur</a>
+									</li>
+									<li class="widget uib_w_220" data-uib="app_framework/listitem" data-ver="1"><a>Aajra</a>
+									</li>
+									<li class="widget uib_w_221" data-uib="app_framework/listitem" data-ver="1"><a>Aakkalkoth</a>
+									</li>
+								</ul>
+								<ul class="list widget uib_w_222 d-margins" data-uib="app_framework/listview" data-ver="1">
+									<li class="widget uib_w_223" data-uib="app_framework/listitem" data-ver="1"><a>Aaklug</a>
+									</li>
+									<li class="widget uib_w_224" data-uib="app_framework/listitem" data-ver="1"><a>Aatpadi</a>
+									</li>
+									<li class="widget uib_w_225" data-uib="app_framework/listitem" data-ver="1"><a>Bagal-kot</a>
+									</li>
+								</ul>
+								<ul class="list widget uib_w_226 d-margins" data-uib="app_framework/listview" data-ver="1">
+									<li class="widget uib_w_227" data-uib="app_framework/listitem" data-ver="1"><a>Barshi</a>
+									</li>
+									<li class="widget uib_w_228" data-uib="app_framework/listitem" data-ver="1"><a>Beed</a>
+									</li>
+
+								</ul>
+								<ul class="list widget uib_w_230 d-margins" data-uib="app_framework/listview" data-ver="1">
+
+									<li class="widget uib_w_232" data-uib="app_framework/listitem" data-ver="1"><a>Chandgad</a>
+									</li>
+									<li class="widget uib_w_233" data-uib="app_framework/listitem" data-ver="1"><a>Gadhinglaj</a>
+									</li>
+								</ul>
+								<ul class="list widget uib_w_387 d-margins" data-uib="app_framework/listview" data-ver="1">
+									<li class="widget uib_w_388" data-uib="app_framework/listitem" data-ver="1"><a>Gandgapur</a>
+									</li>
+									<li class="widget uib_w_389" data-uib="app_framework/listitem" data-ver="1"><a>Gorpadi</a>
+									</li>
+									<li class="widget uib_w_390" data-uib="app_framework/listitem" data-ver="1"><a>Hyderabad</a>
+									</li>
+								</ul>
+								<ul class="list widget uib_w_391 d-margins" data-uib="app_framework/listview" data-ver="1">
+									<li class="widget uib_w_392" data-uib="app_framework/listitem" data-ver="1"><a>Ichalkaranji</a>
+									</li>
+									<li class="widget uib_w_393" data-uib="app_framework/listitem" data-ver="1"><a>Jalana</a>
+									</li>
+									<li class="widget uib_w_394" data-uib="app_framework/listitem" data-ver="1"><a>Jat</a>
+									</li>
+								</ul>
+								<ul class="list widget uib_w_395 d-margins" data-uib="app_framework/listview" data-ver="1">
+									<li class="widget uib_w_396" data-uib="app_framework/listitem" data-ver="1"><a>Kagal</a>
+									</li>
+									<li class="widget uib_w_397" data-uib="app_framework/listitem" data-ver="1"><a>K-mahakal</a>
+									</li>
+									<li class="widget uib_w_398" data-uib="app_framework/listitem" data-ver="1"><a>Latur</a>
+									</li>
+								</ul>
+								<ul class="list widget uib_w_399 d-margins" data-uib="app_framework/listview" data-ver="1">
+
+									<li class="widget uib_w_401" data-uib="app_framework/listitem" data-ver="1"><a>Miraj</a>
+									</li>
+									<li class="widget uib_w_402" data-uib="app_framework/listitem" data-ver="1"><a>Mudhol</a>
+									</li>
+								</ul>
+								<ul class="list widget uib_w_403 d-margins" data-uib="app_framework/listview" data-ver="1">
+									<li class="widget uib_w_404" data-uib="app_framework/listitem" data-ver="1"><a>Narsihwadi</a>
+									</li>
+									<li class="widget uib_w_405" data-uib="app_framework/listitem" data-ver="1"><a>Panjim (Goa)</a>
+									</li>
+									<li class="widget uib_w_406" data-uib="app_framework/listitem" data-ver="1"><a>Parbhani</a>
+									</li>
+								</ul>
+								<ul class="list widget uib_w_407 d-margins" data-uib="app_framework/listview" data-ver="1">
+									<li class="widget uib_w_408" data-uib="app_framework/listitem" data-ver="1"><a>Solapur</a>
+									</li>
+									<li class="widget uib_w_409" data-uib="app_framework/listitem" data-ver="1"><a>Tasgaon</a>
+									</li>
+									<li class="widget uib_w_410" data-uib="app_framework/listitem" data-ver="1"><a>Tulajapur	</a>
+									</li>
+								</ul>
+								<ul class="list widget uib_w_411 d-margins" data-uib="app_framework/listview" data-ver="1">
+									<li class="widget uib_w_412" data-uib="app_framework/listitem" data-ver="1"><a>Usamanabad</a>
+									</li>
+									<li class="widget uib_w_413" data-uib="app_framework/listitem" data-ver="1"><a>Vita</a>
+									</li>
+								</ul><span class="uib_shim"></span>
+							</div>
+						</div>
+						<span class="uib_shim"></span>
+					</div>
+				</div>
+				<div id="uib_page_19" class="upage-content hidden">
+
+					<form class="grid grid-pad urow uib_row_49 row-height-49 6 bar-bg" data-uib="layout/row" data-ver="0">
+						<div class="col uib_col_56 col-0_12-12" data-uib="layout/col" data-ver="0">
+							<div class="widget-container content-area vertical-col">
+
+								<ul class="list widget uib_w_179 d-margins" data-uib="app_framework/listview" data-ver="1">
+									<li class="widget uib_w_180" data-uib="app_framework/listitem" data-ver="1"><a>Kadamwadi</a>
+									</li>
+									<li class="widget uib_w_181" data-uib="app_framework/listitem" data-ver="1"><a>Koyana Kolony</a>
+									</li>
+									<li class="widget uib_w_182" data-uib="app_framework/listitem" data-ver="1"><a>Maoje Vadgaon</a>
+									</li>
+								</ul>
+								<ul class="list widget uib_w_183 d-margins" data-uib="app_framework/listview" data-ver="1">
+									<li class="widget uib_w_184" data-uib="app_framework/listitem" data-ver="1"><a>Nagav</a>
+									</li>
+									<li class="widget uib_w_185" data-uib="app_framework/listitem" data-ver="1"><a>R.K.Nagar</a>
+									</li>
+									<li class="widget uib_w_186" data-uib="app_framework/listitem" data-ver="1"><a>Rukadi</a>
+									</li>
+								</ul>
+								<ul class="list widget uib_w_187 d-margins" data-uib="app_framework/listview" data-ver="1">
+									<li class="widget uib_w_188" data-uib="app_framework/listitem" data-ver="1"><a>Shiroli</a>
+									</li>
+									<li class="widget uib_w_189" data-uib="app_framework/listitem" data-ver="1"><a>Shiye</a>
+									</li>
+									<li class="widget uib_w_190" data-uib="app_framework/listitem" data-ver="1"><a>Shivaji Vidyapeeth</a>
+									</li>
+								</ul>
+								<ul class="list widget uib_w_191 d-margins" data-uib="app_framework/listview" data-ver="1">
+									<li class="widget uib_w_192" data-uib="app_framework/listitem" data-ver="1"><a>Sugarmill Bavada</a>
+									</li>
+									<li class="widget uib_w_193" data-uib="app_framework/listitem" data-ver="1"><a>Vadgaon</a>
+									</li>
+								</ul><span class="uib_shim"></span>
+							</div>
+						</div>
+						<span class="uib_shim"></span>
+					</form>
+				</div>
+				<div id="uib_page_18" class="upage-content hidden">
+
+					<div class="grid grid-pad urow uib_row_48 row-height-48 bar-bg" data-uib="layout/row" data-ver="0">
+						<div class="col uib_col_55 col-0_12-12" data-uib="layout/col" data-ver="0">
+							<div class="widget-container content-area vertical-col">
+
+								<ul class="list widget uib_w_171 d-margins" data-uib="app_framework/listview" data-ver="1">
+									<li class="widget uib_w_172" data-uib="app_framework/listitem" data-ver="1"><a>Kagal</a>
+									</li>
+									<li class="widget uib_w_173" data-uib="app_framework/listitem" data-ver="1"><a>Kogil</a>
+									</li>
+									<li class="widget uib_w_174" data-uib="app_framework/listitem" data-ver="1"><a>Mudshingi</a>
+									</li>
+								</ul>
+								<ul class="list widget uib_w_175 d-margins" data-uib="app_framework/listview" data-ver="1">
+									<li class="widget uib_w_176" data-uib="app_framework/listitem" data-ver="1"><a>Pachgaon</a>
+									</li>
+									<li class="widget uib_w_177" data-uib="app_framework/listitem" data-ver="1"><a>R.K.Nagar</a>
+									</li>
+									<li class="widget uib_w_178" data-uib="app_framework/listitem" data-ver="1"><a>Shivaji Vidyapeeth</a>
+									</li>
+								</ul><span class="uib_shim"></span>
+							</div>
+						</div>
+						<span class="uib_shim"></span>
+					</div>
+				</div>
+				<div id="uib_page_17" class="upage-content hidden">
+
+					<div class="grid grid-pad urow uib_row_47 row-height-47" data-uib="layout/row" data-ver="0">
+						<div class="col uib_col_54 col-0_12-12" data-uib="layout/col" data-ver="0">
+							<div class="widget-container content-area vertical-col">
+
+								<ul class="list widget uib_w_157 d-margins" data-uib="app_framework/listview" data-ver="1">
+									<li class="widget uib_w_158" data-uib="app_framework/listitem" data-ver="1"><a>Chinchwad</a>
+									</li>
+									<li class="widget uib_w_159" data-uib="app_framework/listitem" data-ver="1"><a>Kagal</a>
+									</li>
+									<li class="widget uib_w_160" data-uib="app_framework/listitem" data-ver="1"><a>Kogil</a>
+									</li>
+								</ul>
+								<ul class="list widget uib_w_161 d-margins" data-uib="app_framework/listview" data-ver="1">
+									<li class="widget uib_w_162" data-uib="app_framework/listitem" data-ver="1"><a>Lonar Vasahat</a>
+									</li>
+									<li class="widget uib_w_163" data-uib="app_framework/listitem" data-ver="1"><a>Maoje Vadgaon</a>
+									</li>
+									<li class="widget uib_w_164" data-uib="app_framework/listitem" data-ver="1"><a>Panchtarankit MIDC</a>
+									</li>
+								</ul>
+								<ul class="list widget uib_w_165 d-margins" data-uib="app_framework/listview" data-ver="1">
+									<li class="widget uib_w_166" data-uib="app_framework/listitem" data-ver="1"><a>Rukadi mangaon</a>
+									</li>
+									<li class="widget uib_w_167" data-uib="app_framework/listitem" data-ver="1"><a>Shivaji Vidyapeeth</a>
+									</li>
+									<li class="widget uib_w_168" data-uib="app_framework/listitem" data-ver="1"><a>Vadgaon</a>
+									</li>
+								</ul>
+								<ul class="list widget uib_w_169 d-margins" data-uib="app_framework/listview" data-ver="1">
+									<li class="widget uib_w_170" data-uib="app_framework/listitem" data-ver="1"><a>Valivade</a>
+									</li>
+								</ul><span class="uib_shim"></span>
+							</div>
+						</div>
+						<span class="uib_shim"></span>
+					</div>
+				</div>
+				<div id="uib_page_16" class="upage-content hidden">
+
+					<div class="grid grid-pad urow uib_row_45 row-height-45 6" data-uib="layout/row" data-ver="0">
+						<div class="col uib_col_52 col-0_12-12" data-uib="layout/col" data-ver="0">
+							<div class="widget-container content-area vertical-col left">
+
+								<ul class="list widget uib_w_137 d-margins" data-uib="app_framework/listview" data-ver="1">
+									<li class="widget uib_w_138" data-uib="app_framework/listitem" data-ver="1"><a>Chinchwad</a>
+									</li>
+									<li class="widget uib_w_139" data-uib="app_framework/listitem" data-ver="1"><a>Gandhinagar</a>
+									</li>
+									<li class="widget uib_w_140" data-uib="app_framework/listitem" data-ver="1"><a>Gorakumbhar Vasahat</a>
+									</li>
+								</ul>
+								<ul class="list widget uib_w_141 d-margins" data-uib="app_framework/listview" data-ver="1">
+									<li class="widget uib_w_142" data-uib="app_framework/listitem" data-ver="1"><a>Kadamwadi</a>
+									</li>
+									<li class="widget uib_w_143" data-uib="app_framework/listitem" data-ver="1"><a>Kagal</a>
+									</li>
+									<li class="widget uib_w_144" data-uib="app_framework/listitem" data-ver="1"><a>Koyna kolony</a>
+									</li>
+								</ul>
+								<ul class="list widget uib_w_145 d-margins" data-uib="app_framework/listview" data-ver="1">
+									<li class="widget uib_w_146" data-uib="app_framework/listitem" data-ver="1"><a>Lonar Vasahat</a>
+									</li>
+
+								</ul>
+								<ul class="list widget uib_w_249 d-margins" data-uib="app_framework/listview" data-ver="1">
+									<li class="widget uib_w_250" data-uib="app_framework/listitem" data-ver="1"><a>Maoje Vadgaon</a>
+									</li>
+									<li class="widget uib_w_251" data-uib="app_framework/listitem" data-ver="1"><a>Nagav</a>
+									</li>
+									<li class="widget uib_w_252" data-uib="app_framework/listitem" data-ver="1"><a>Rukadi mangaon</a>
+									</li>
+								</ul>
+								<ul class="list widget uib_w_253 d-margins" data-uib="app_framework/listview" data-ver="1">
+									<li class="widget uib_w_254" data-uib="app_framework/listitem" data-ver="1"><a>Shiye</a>
+									</li>
+									<li class="widget uib_w_255" data-uib="app_framework/listitem" data-ver="1"><a>Shiroli</a>
+									</li>
+									<li class="widget uib_w_256" data-uib="app_framework/listitem" data-ver="1"><a>Sugermill</a>
+									</li>
+								</ul>
+								<ul class="list widget uib_w_257 d-margins" data-uib="app_framework/listview" data-ver="1">
+									<li class="widget uib_w_258" data-uib="app_framework/listitem" data-ver="1"><a>Valivade</a>
+									</li>
+									<li class="widget uib_w_259" data-uib="app_framework/listitem" data-ver="1"><a>Vadgaon</a>
+									</li>
+								</ul>
+
+								<span class="uib_shim"></span>
+							</div>
+						</div>
+						<span class="uib_shim"></span>
+					</div>
+				</div>
+				<div id="uib_page_15" class="upage-content hidden">
+
+					<form class="grid grid-pad urow uib_row_44 row-height-44 rest-of-height" data-uib="layout/row" data-ver="0">
+						<div class="col uib_col_51 col-0_12-12" data-uib="layout/col" data-ver="0">
+							<div class="widget-container content-area vertical-col">
+
+								<div class="widget uib_w_194 d-margins" data-uib="media/text" data-ver="0">
+									<div class="widget-container left-receptacle"></div>
+									<div class="widget-container right-receptacle"></div>
+									<div>
+										<p>U - via Uchgao T - via Tavade Hotel</p>
+										<p>B - via Bavada S - via Shiroli</p>
+									</div>
+								</div>
+								<ul class="list widget uib_w_131 d-margins" data-uib="app_framework/listview" data-ver="1">
+									<li class="widget uib_w_132" data-uib="app_framework/listitem" data-ver="1"><a>From C.B.S.</a>
+									</li>
+									<li class="widget uib_w_133" data-uib="app_framework/listitem" data-ver="1"><a>From Padalkar Market (Gangavesh)</a>
+									</li>
+									<li class="widget uib_w_134" data-uib="app_framework/listitem" data-ver="1"><a>From Railway Fatak</a>
+									</li>
+								</ul>
+								<ul class="list widget uib_w_135 d-margins" data-uib="app_framework/listview" data-ver="1">
+									<li class="widget uib_w_136" data-uib="app_framework/listitem" data-ver="1"><a>From Chatrapati Shivaji Chowk</a>
+									</li>
+								</ul><span class="uib_shim"></span>
+							</div>
+						</div>
+						<span class="uib_shim"></span>
+					</form>
+				</div>
+				<div id="uib_page_14" class="upage-content hidden">
+
+					<div class="grid grid-pad urow uib_row_43 row-height-43" data-uib="layout/row" data-ver="0">
+						<div class="col uib_col_112 col-0_2-12_2-2" data-uib="layout/col" data-ver="0">
+							<div class="widget-container content-area vertical-col">
+
+								<a class="uib-graphic-button default-graphic-sizing default-image-sizing hover-graphic-button active-graphic-button default-graphic-button default-graphic-text widget uib_w_672 d-margins media-button-text-bottom" data-uib="media/graphic_button" data-ver="0"
+								href="sub-page uib_page_1">
+									<img src="images/Photos-icon.png">
+									<span class="uib-caption">Gallary</span>
+								</a><span class="uib_shim"></span>
+							</div>
+						</div>
+						<div class="col uib_col_114 col-0_8-12_8-10" data-uib="layout/col" data-ver="0">
+							<div class="widget-container content-area vertical-col">
+								<a class="uib-graphic-button default-graphic-sizing default-image-sizing hover-graphic-button active-graphic-button default-graphic-button default-graphic-text widget uib_w_673 d-margins media-button-text-bottom" data-uib="media/graphic_button" data-ver="0">
+									<img src="images/download.png">
+									<span class="uib-caption">K-specials</span>
+								</a><span class="uib_shim"></span>
+							</div>
+						</div>
+						<div class="col uib_col_113 col-0_2-12_2-10" data-uib="layout/col" data-ver="0">
+							<div class="widget-container content-area wrapping-col left">
+
+								<span class="uib_shim"></span>
+							</div>
+						</div>
+
+						<span class="uib_shim"></span>
+					</div>
+
+					<div class="grid grid-pad urow uib_row_100 row-height-100" data-uib="layout/row" data-ver="0">
+						<div class="col uib_col_115 col-0_12-12" data-uib="layout/col" data-ver="0">
+							<div class="widget-container content-area vertical-col">
+
+								<div class="uib-grid widget uib_w_740 grid-text grid-height d-margins" data-uib="layout/grid" data-ver="0">
+									<div class="uib-grid-row">
+										<div class="uib-grid-cell widget-container"></div>
+										<div class="uib-grid-cell widget-container"></div>
+										<div class="uib-grid-cell widget-container"></div>
+									</div>
+									<div class="uib-grid-row">
+										<div class="uib-grid-cell widget-container"></div>
+										<div class="uib-grid-macell widget-container"></div>
+										<div class="uib-grid-cell widget-container"></div>
+									</div>
+									<div class="uib-grid-row">
+										<div class="uib-grid-cell widget-container"></div>
+										<div class="uib-grid-cell widget-container"></div>
+										<div class="uib-grid-cell widget-container"></div>
+									</div>
+								</div>
+								<div class="uib-grid widget uib_w_741 grid-text grid-height d-margins" data-uib="layout/grid" data-ver="0">
+									<div class="uib-grid-row">
+										<div class="uib-grid-cell widget-container"></div>
+										<div class="uib-grid-cell widget-container"></div>
+										<div class="uib-grid-cell widget-container"></div>
+									</div>
+									<div class="uib-grid-row">
+										<div class="uib-grid-cell widget-container"></div>
+										<div class="uib-grid-cell widget-container"></div>
+										<div class="uib-grid-cell widget-container"></div>
+									</div>
+									<div class="uib-grid-row">
+										<div class="uib-grid-cell widget-container"></div>
+										<div class="uib-grid-cell widget-container"></div>
+										<div class="uib-grid-cell widget-container"></div>
+									</div>
+								</div><span class="uib_shim"></span>
+							</div>
+						</div>
+						<span class="uib_shim"></span>
+					</div>
+				</div>
+				<div id="uib_page_13" class="upage-content hidden">
+
+					<div class="grid grid-pad urow uib_row_33 row-height-33" data-uib="layout/row" data-ver="0">
+						<div class="col uib_col_47 col-0_12-12" data-uib="layout/col" data-ver="0">
+							<div class="widget-container content-area vertical-col">
+
+								<div class="widget uib_w_85 d-margins a" data-uib="media/text" data-ver="0">
+									<div class="widget-container left-receptacle"></div>
+									<div class="widget-container right-receptacle"></div>
+									<div>
+										<p>MUNICIPAL BLOOD BANK</p>
+									</div>
+								</div><a class="button widget uib_w_87 d-margins icon phone green" data-uib="app_framework/button" data-ver="1">2541870</a>
+
+								<div class="widget uib_w_86 d-margins a" data-uib="media/text" data-ver="0">
+									<div class="widget-container left-receptacle"></div>
+									<div class="widget-container right-receptacle"></div>
+									<div>
+										<p>SHAHU BLOOD BANK</p>
+									</div>
+								</div><a class="button widget uib_w_88 d-margins icon phone green" data-uib="app_framework/button" data-ver="1">2651640</a><span class="uib_shim"></span>
+							</div>
+						</div>
+						<span class="uib_shim"></span>
+					</div>
+				</div>
+				<div id="uib_page_12" class="upage-content hidden">
+
+					<div class="grid grid-pad urow uib_row_28 row-height-28" data-uib="layout/row" data-ver="0">
+						<div class="col uib_col_42 col-0_12-12" data-uib="layout/col" data-ver="0">
+							<div class="widget-container content-area vertical-col">
+
+								<div class="widget uib_w_75 d-margins a" data-uib="media/text" data-ver="0">
+									<div class="widget-container left-receptacle"></div>
+									<div class="widget-container right-receptacle"></div>
+									<div>
+										<p>JUNA RAJAWADA POLICE STATION</p>
+									</div>
+								</div><a class="button widget uib_w_80 d-margins icon phone green" data-uib="app_framework/button" data-ver="1">2542233</a>
+
+								<div class="widget uib_w_76 d-margins a" data-uib="media/text" data-ver="0">
+									<div class="widget-container left-receptacle"></div>
+									<div class="widget-container right-receptacle"></div>
+									<div>
+										<p>KARVEER POLICE STATION</p>
+									</div>
+								</div><a class="button widget uib_w_81 d-margins icon phone green" data-uib="app_framework/button" data-ver="1">2644133</a>
+
+								<div class="widget uib_w_77 d-margins a" data-uib="media/text" data-ver="0">
+									<div class="widget-container left-receptacle"></div>
+									<div class="widget-container right-receptacle"></div>
+									<div>
+										<p>LAXMIPURI POLICE STATION</p>
+									</div>
+								</div><a class="button widget uib_w_82 d-margins icon phone green" data-uib="app_framework/button" data-ver="1">2643027</a>
+
+								<div class="widget uib_w_78 d-margins a" data-uib="media/text" data-ver="0">
+									<div class="widget-container left-receptacle"></div>
+									<div class="widget-container right-receptacle"></div>
+									<div>
+										<p>RAJARAMPURI POLICE STATION</p>
+									</div>
+								</div><a class="button widget uib_w_83 d-margins icon phone green" data-uib="app_framework/button" data-ver="1">2694633</a>
+
+								<div class="widget uib_w_79 d-margins a" data-uib="media/text" data-ver="0">
+									<div class="widget-container left-receptacle"></div>
+									<div class="widget-container right-receptacle"></div>
+									<div>
+										<p>SHAHUPURI POLICE STATION</p>
+									</div>
+								</div><a class="button widget uib_w_84 d-margins icon phone green" data-uib="app_framework/button" data-ver="1"> 2661733</a><span class="uib_shim"></span>
+							</div>
+						</div>
+						<span class="uib_shim"></span>
+					</div>
+				</div>
+				<div id="uib_page_11" class="upage-content hidden">
+
+					<div class="grid grid-pad urow uib_row_23 row-height-23" data-uib="layout/row" data-ver="0">
+						<div class="col uib_col_37 col-0_12-12" data-uib="layout/col" data-ver="0">
+							<div class="widget-container content-area vertical-col">
+
+								<div class="widget uib_w_67 d-margins a" data-uib="media/text" data-ver="0">
+									<div class="widget-container left-receptacle"></div>
+									<div class="widget-container right-receptacle"></div>
+									<div>
+										<p>TARARANI FIRE STATION NO. 1 MAIN OFFICE</p>
+									</div>
+								</div><a class="button widget uib_w_68 d-margins icon phone green" data-uib="app_framework/button" data-ver="1">101</a>
+								<a class="button widget uib_w_69 d-margins icon phone green" data-uib="app_framework/button" data-ver="1">2537221</a>
+
+								<div class="widget uib_w_70 d-margins a" data-uib="media/text" data-ver="0">
+									<div class="widget-container left-receptacle"></div>
+									<div class="widget-container right-receptacle"></div>
+									<div>
+										<p>MUNICIPAL BUILDING</p>
+									</div>
+								</div><a class="button widget uib_w_71 d-margins icon phone green" data-uib="app_framework/button" data-ver="1">2540296</a><span class="uib_shim"></span>
+							</div>
+						</div>
+						<span class="uib_shim"></span>
+					</div>
+				</div>
+				<div id="uib_page_10" class="upage-content hidden">
+
+					<div class="grid grid-pad urow uib_row_19 row-height-19" data-uib="layout/row" data-ver="0">
+						<div class="col uib_col_33 col-0_12-12" data-uib="layout/col" data-ver="0">
+							<div class="widget-container content-area vertical-col">
+
+								<div class="widget uib_w_61 d-margins a" data-uib="media/text" data-ver="0">
+									<div class="widget-container left-receptacle"></div>
+									<div class="widget-container right-receptacle"></div>
+									<div>
+										<p>SAVITRIBAI PHULE HOSPITAL</p>
+									</div>
+								</div><a class="button widget uib_w_62 d-margins w icon phone green" data-uib="app_framework/button" data-ver="1">2642687</a>
+
+								<div class="widget uib_w_63 d-margins a" data-uib="media/text" data-ver="0">
+									<div class="widget-container left-receptacle"></div>
+									<div class="widget-container right-receptacle"></div>
+									<div>
+										<p>SHREE DWARAKANATH KOTNIS HOSPITAL</p>
+									</div>
+								</div><a class="button widget uib_w_64 d-margins icon phone green" data-uib="app_framework/button" data-ver="1">2691484</a>
+
+								<div class="widget uib_w_65 d-margins a" data-uib="media/text" data-ver="0">
+									<div class="widget-container left-receptacle"></div>
+									<div class="widget-container right-receptacle"></div>
+									<div>
+										<p>PANCHAGANGA HOSPITAL</p>
+									</div>
+								</div><a class="button widget uib_w_66 d-margins icon phone green" data-uib="app_framework/button" data-ver="1">2545768</a>
+
+								<div class="widget uib_w_73 d-margins a" data-uib="media/text" data-ver="0">
+									<div class="widget-container left-receptacle"></div>
+									<div class="widget-container right-receptacle"></div>
+									<div>
+										<p>C.P.R. HOSPITAL</p>
+									</div>
+								</div><a class="button widget uib_w_74 d-margins w icon phone green" data-uib="app_framework/button" data-ver="1">2644352</a><span class="uib_shim"></span>
+							</div>
+						</div>
+						<span class="uib_shim"></span>
+					</div>
+				</div>
+				<div id="uib_page_9" class="upage-content hidden">
+
+					<div class="grid grid-pad urow uib_row_16 row-height-16" data-uib="layout/row" data-ver="0">
+						<div class="col uib_col_31 col-0_12-12" data-uib="layout/col" data-ver="0">
+							<div class="widget-container content-area vertical-col">
+
+								<ul class="list widget uib_w_305 d-margins" data-uib="app_framework/listview" data-ver="1">
+									<li class="widget uib_w_308" data-uib="app_framework/listitem" data-ver="1"><a>1011                       MAHALAXMI EXPRESS</a>
+									</li>
+								</ul>
+								<ul class="list widget uib_w_47 d-margins" data-uib="app_framework/listview" data-ver="1">
+									<li class="widget uib_w_48" data-uib="app_framework/listitem" data-ver="1"><a>1012                       MAHALAXMI EXPRESS</a>
+									</li>
+									<li class="widget uib_w_307" data-uib="app_framework/listitem" data-ver="1"><a>1023         SAHYADRI EXPRESS</a>
+									</li>
+									<li class="widget uib_w_49" data-uib="app_framework/listitem" data-ver="1"><a>1024         SAHYADRI EXPRESS</a>
+									</li>
+									<li class="widget uib_w_310" data-uib="app_framework/listitem" data-ver="1"><a>1029   SAHYADRI EXPRESS</a>
+									</li>
+									<li class="widget uib_w_50" data-uib="app_framework/listitem" data-ver="1"><a>1030   SAHYADRI EXPRESS</a>
+									</li>
+								</ul>
+								<ul class="list widget uib_w_89 d-margins" data-uib="app_framework/listview" data-ver="1">
+									<li class="widget uib_w_90" data-uib="app_framework/listitem" data-ver="1"><a>1039    MAHARASHTRA EXPRESS</a>
+									</li>
+									<li class="widget uib_w_312" data-uib="app_framework/listitem" data-ver="1"><a>1040    MAHARASHTRA EXPRESS</a>
+									</li>
+									<li class="widget uib_w_314" data-uib="app_framework/listitem" data-ver="1"><a>11045		Deekshabhoomi Express</a>
+									</li>
+									<li class="widget uib_w_315" data-uib="app_framework/listitem" data-ver="1"><a>11046		Deekshabhoomi Express</a>
+									</li>
+									<li class="widget uib_w_316" data-uib="app_framework/listitem" data-ver="1"><a>11049  Ahmedabad-Kolhapur Express</a>
+									</li>
+									<li class="widget uib_w_91" data-uib="app_framework/listitem" data-ver="1"><a>1050          AHMEDABAD EXPRESS</a>
+									</li>
+									<li class="widget uib_w_318" data-uib="app_framework/listitem" data-ver="1"><a>11051		Solapur-Kolhapur Express</a>
+									</li>
+									<li class="widget uib_w_319" data-uib="app_framework/listitem" data-ver="1"><a>11052		Kolhapur Solapur Express</a>
+									</li>
+									<li class="widget uib_w_320" data-uib="app_framework/listitem" data-ver="1"><a>11403		Nagpur-Kolhapur Express </a>
+									</li>
+									<li class="widget uib_w_322" data-uib="app_framework/listitem" data-ver="1"><a>11404		Kolhapur-Nagpur Express</a>
+									</li>
+									<li class="widget uib_w_92" data-uib="app_framework/listitem" data-ver="1"><a>11608   KOP MRJ PASSENGER</a>
+									</li>
+								</ul>
+								<ul class="list widget uib_w_93 d-margins" data-uib="app_framework/listview" data-ver="1">
+									<li class="widget uib_w_94" data-uib="app_framework/listitem" data-ver="1"><a>11622     KOP PUNE PASSENGER</a>
+									</li>
+									<li class="widget uib_w_95" data-uib="app_framework/listitem" data-ver="1"><a>11628  KOP MRJ PASSENGER</a>
+									</li>
+								</ul>
+								<ul class="list widget uib_w_299 d-margins" data-uib="app_framework/listview" data-ver="1">
+									<li class="widget uib_w_300" data-uib="app_framework/listitem" data-ver="1"><a>11630 KOP SLI PASSENGER</a>
+									</li>
+									<li class="widget uib_w_301" data-uib="app_framework/listitem" data-ver="1"><a>12147 NIZAMUDDIN EXP</a>
+									</li>
+									<li class="widget uib_w_302" data-uib="app_framework/listitem" data-ver="1"><a>12148		H.Nizamuddin-CSMT Kolhapur Express</a>
+									</li>
+								</ul>
+								<ul class="list widget uib_w_323 d-margins" data-uib="app_framework/listview" data-ver="1">
+									<li class="widget uib_w_324" data-uib="app_framework/listitem" data-ver="1"><a>15018		Gorakhpur - Kolhapur Express Slip</a>
+									</li>
+									<li class="widget uib_w_325" data-uib="app_framework/listitem" data-ver="1"><a>16589		Rani Chennamma Express</a>
+									</li>
+									<li class="widget uib_w_326" data-uib="app_framework/listitem" data-ver="1"><a>16590 RANI CHENNAMA</a>
+									</li>
+								</ul>
+								<ul class="list widget uib_w_327 d-margins" data-uib="app_framework/listview" data-ver="1">
+									<li class="widget uib_w_328" data-uib="app_framework/listitem" data-ver="1"><a>17003		Hyderabad-Kolhapur Express</a>
+									</li>
+									<li class="widget uib_w_329" data-uib="app_framework/listitem" data-ver="1"><a>17004		Kolhapur-Hyderabad Express</a>
+									</li>
+									<li class="widget uib_w_330" data-uib="app_framework/listitem" data-ver="1"><a>17415		Haripriya Express</a>
+									</li>
+								</ul>
+								<ul class="list widget uib_w_303 d-margins" data-uib="app_framework/listview" data-ver="1">
+									<li class="widget uib_w_304" data-uib="app_framework/listitem" data-ver="1"><a>17416	HARIPRIYA EXP</a>
+									</li>
+
+								</ul>
+								<ul class="list widget uib_w_331 d-margins" data-uib="app_framework/listview" data-ver="1">
+									<li class="widget uib_w_332" data-uib="app_framework/listitem" data-ver="1"><a>51407		Miraj-Kolhapur Passenger</a>
+									</li>
+									<li class="widget uib_w_333" data-uib="app_framework/listitem" data-ver="1"><a>51408		Kolhapur Miraj Passenger</a>
+									</li>
+									<li class="widget uib_w_334" data-uib="app_framework/listitem" data-ver="1"><a>51409		Pune -Shree Chatrapati Shahu M(T) Kolhapur Passenger</a>
+									</li>
+								</ul>
+								<ul class="list widget uib_w_335 d-margins" data-uib="app_framework/listview" data-ver="1">
+									<li class="widget uib_w_336" data-uib="app_framework/listitem" data-ver="1"><a>51410		Shree Chatrapati Shahu M(T) Kolhapur- Pune Passenger</a>
+									</li>
+									<li class="widget uib_w_337" data-uib="app_framework/listitem" data-ver="1"><a>51427		Miraj C Shahu Maharaj Passenger</a>
+									</li>
+									<li class="widget uib_w_338" data-uib="app_framework/listitem" data-ver="1"><a>51428		Kolhapur - Miraj Passenger</a>
+									</li>
+								</ul>
+								<ul class="list widget uib_w_339 d-margins" data-uib="app_framework/listview" data-ver="1">
+									<li class="widget uib_w_340" data-uib="app_framework/listitem" data-ver="1"><a>51429		Sangli-Kolhapur Passenger</a>
+									</li>
+									<li class="widget uib_w_341" data-uib="app_framework/listitem" data-ver="1"><a>51430		Kolhapur - Sangli Passenger</a>
+									</li>
+									<li class="widget uib_w_342" data-uib="app_framework/listitem" data-ver="1"><a>51441		Satara-CSMT Kolhapur Passenger</a>
+									</li>
+								</ul>
+								<ul class="list widget uib_w_343 d-margins" data-uib="app_framework/listview" data-ver="1">
+									<li class="widget uib_w_344" data-uib="app_framework/listitem" data-ver="1"><a>51442		CSMT Kolhapur-Satara Passenger</a>
+									</li>
+								</ul><span class="uib_shim"></span>
+							</div>
+						</div>
+						<span class="uib_shim"></span>
+					</div>
+				</div>
+				<div id="uib_page_8" class="upage-content hidden">
+
+					<div class="grid grid-pad urow uib_row_15 row-height-15" data-uib="layout/row" data-ver="0">
+						<div class="col uib_col_30 col-0_12-12" data-uib="layout/col" data-ver="0">
+							<div class="widget-container content-area vertical-col">
+
+								<ul class="list widget uib_w_43 d-margins" data-uib="app_framework/listview" data-ver="1">
+									<li class="widget uib_w_44" data-uib="app_framework/listitem" data-ver="1"><a class="" href="uib_page_9">ALL TRAINS</a>
+									</li>
+									<li class="widget uib_w_45" data-uib="app_framework/listitem" data-ver="1"><a class="icon right">INCOMING TRAINS</a>
+									</li>
+									<li class="widget uib_w_46" data-uib="app_framework/listitem" data-ver="1"><a class="icon left">OUTGOING TRAINS</a>
+									</li>
+								</ul><span class="uib_shim"></span>
+							</div>
+						</div>
+						<span class="uib_shim"></span>
+					</div>
+				</div>
+				<div id="uib_page_7" class="upage-content hidden">
+
+					<form class="grid grid-pad urow uib_row_14 row-height-14" data-uib="layout/row" data-ver="0">
+						<div class="col uib_col_28 col-0_12-12 7" data-uib="layout/col" data-ver="0">
+							<div class="widget-container content-area vertical-col">
+
+								<a class="button widget uib_w_37 d-margins" data-uib="app_framework/button" data-ver="1">DAY</a>
+								<ul class="list widget uib_w_33 d-margins" data-uib="app_framework/listview" data-ver="1">
+									<li class="widget uib_w_34" data-uib="app_framework/listitem" data-ver="1"><a>2 Km                                          Rs 10</a>
+									</li>
+									<li class="widget uib_w_35" data-uib="app_framework/listitem" data-ver="1"><a>4 Km                                          Rs 12</a>
+									</li>
+									<li class="widget uib_w_36" data-uib="app_framework/listitem" data-ver="1"><a>6 Km                                          Rs 15</a>
+									</li>
+								</ul>
+
+								<ul class="list widget uib_w_96 d-margins" data-uib="app_framework/listview" data-ver="1">
+									<li class="widget uib_w_97" data-uib="app_framework/listitem" data-ver="1"><a>8 Km                                          Rs 18</a>
+									</li>
+									<li class="widget uib_w_98" data-uib="app_framework/listitem" data-ver="1"><a>10 Km                                          Rs 20</a>
+									</li>
+									<li class="widget uib_w_99" data-uib="app_framework/listitem" data-ver="1"><a>12 Km                                          Rs 22</a>
+									</li>
+								</ul>
+
+								<ul class="list widget uib_w_100 d-margins" data-uib="app_framework/listview" data-ver="1">
+									<li class="widget uib_w_101" data-uib="app_framework/listitem" data-ver="1"><a>14 Km                                          Rs 24</a>
+									</li>
+									<li class="widget uib_w_102" data-uib="app_framework/listitem" data-ver="1"><a>16 Km                                          Rs 26</a>
+									</li>
+									<li class="widget uib_w_103" data-uib="app_framework/listitem" data-ver="1"><a>18 Km                                          Rs 30</a>
+									</li>
+								</ul>
+
+								<ul class="list widget uib_w_104 d-margins" data-uib="app_framework/listview" data-ver="1">
+									<li class="widget uib_w_105" data-uib="app_framework/listitem" data-ver="1"><a>20 Km                                          Rs 35</a>
+									</li>
+									<li class="widget uib_w_106" data-uib="app_framework/listitem" data-ver="1"><a>22 Km                                          Rs 40</a>
+									</li>
+									<li class="widget uib_w_107" data-uib="app_framework/listitem" data-ver="1"><a>24 Km                                          Rs 50</a>
+									</li>
+								</ul>
+
+								<ul class="list widget uib_w_108 d-margins" data-uib="app_framework/listview" data-ver="1">
+									<li class="widget uib_w_109" data-uib="app_framework/listitem" data-ver="1"><a>26 Km                                          Rs 55</a>
+									</li>
+									<li class="widget uib_w_110" data-uib="app_framework/listitem" data-ver="1"><a>28 Km                                          Rs 60</a>
+									</li>
+									<li class="widget uib_w_111" data-uib="app_framework/listitem" data-ver="1"><a>30 Km                                          Rs 70</a>
+									</li>
+								</ul><a class="button widget uib_w_38 d-margins" data-uib="app_framework/button" data-ver="1">NIGHT</a>
+								<ul class="list widget uib_w_39 d-margins" data-uib="app_framework/listview" data-ver="1">
+									<li class="widget uib_w_40" data-uib="app_framework/listitem" data-ver="1"><a>2 Km                                          Rs 10</a>
+									</li>
+									<li class="widget uib_w_41" data-uib="app_framework/listitem" data-ver="1"><a>4 Km                                          Rs 10</a>
+									</li>
+									<li class="widget uib_w_42" data-uib="app_framework/listitem" data-ver="1"><a>6 Km                                          Rs 10</a>
+									</li>
+								</ul>
+								<ul class="list widget uib_w_112 d-margins" data-uib="app_framework/listview" data-ver="1">
+									<li class="widget uib_w_113" data-uib="app_framework/listitem" data-ver="1"><a>8 Km                                          Rs 10</a>
+									</li>
+									<li class="widget uib_w_114" data-uib="app_framework/listitem" data-ver="1"><a>10 Km                                          Rs 10</a>
+									</li>
+									<li class="widget uib_w_115" data-uib="app_framework/listitem" data-ver="1"><a>12 Km                                          Rs 10</a>
+									</li>
+								</ul>
+								<ul class="list widget uib_w_116 d-margins" data-uib="app_framework/listview" data-ver="1">
+									<li class="widget uib_w_117" data-uib="app_framework/listitem" data-ver="1"><a>14 Km                                          Rs 10</a>
+									</li>
+									<li class="widget uib_w_118" data-uib="app_framework/listitem" data-ver="1"><a>16 Km                                          Rs 10</a>
+									</li>
+									<li class="widget uib_w_119" data-uib="app_framework/listitem" data-ver="1"><a>18 Km                                          Rs 10</a>
+									</li>
+								</ul>
+								<ul class="list widget uib_w_120 d-margins" data-uib="app_framework/listview" data-ver="1">
+									<li class="widget uib_w_121" data-uib="app_framework/listitem" data-ver="1"><a>20 Km                                          Rs 10</a>
+									</li>
+									<li class="widget uib_w_122" data-uib="app_framework/listitem" data-ver="1"><a>22 Km                                          Rs 10</a>
+									</li>
+									<li class="widget uib_w_123" data-uib="app_framework/listitem" data-ver="1"><a>24 Km                                          Rs 10</a>
+									</li>
+								</ul>
+								<ul class="list widget uib_w_124 d-margins" data-uib="app_framework/listview" data-ver="1">
+									<li class="widget uib_w_125" data-uib="app_framework/listitem" data-ver="1"><a>26 Km                                          Rs 10</a>
+									</li>
+									<li class="widget uib_w_126" data-uib="app_framework/listitem" data-ver="1"><a>28 Km                                          Rs 10</a>
+									</li>
+									<li class="widget uib_w_127" data-uib="app_framework/listitem" data-ver="1"><a>30 Km                                          Rs 10</a>
+									</li>
+								</ul>
+								<span class="uib_shim"></span>
+							</div>
+						</div>
+						<span class="uib_shim"></span>
+					</form>
+				</div>
+				<div id="uib_page_4" class="upage-content hidden">
+
+					<div class="grid grid-pad urow uib_row_17 row-height-17" data-uib="layout/row" data-ver="0">
+						<div class="col uib_col_32 col-0_12-12" data-uib="layout/col" data-ver="0">
+							<div class="widget-container content-area vertical-col">
+
+								<ul class="list widget uib_w_51 d-margins" data-uib="app_framework/listview" data-ver="1">
+									<li class="widget uib_w_52" data-uib="app_framework/listitem" data-ver="1"><a>Hospitals</a>
+									</li>
+									<li class="widget uib_w_53" data-uib="app_framework/listitem" data-ver="1"><a>Police Station</a>
+									</li>
+									<li class="widget uib_w_54" data-uib="app_framework/listitem" data-ver="1"><a>Fire</a>
+									</li>
+								</ul>
+								<ul class="list widget uib_w_55 d-margins" data-uib="app_framework/listview" data-ver="1">
+									<li class="widget uib_w_56" data-uib="app_framework/listitem" data-ver="1"><a>Blood Bank</a>
+									</li>
+
+								</ul>
+								<span class="uib_shim"></span>
+							</div>
+						</div>
+						<span class="uib_shim"></span>
+					</div>
+				</div>
+				<div id="uib_page_3" class="upage-content hidden">
+
+					<div class="grid grid-pad urow uib_row_41 row-height-41" data-uib="layout/row" data-ver="0">
+
+						<div class="col uib_col_66 col-0_3-12" data-uib="layout/col" data-ver="0">
+							<div class="widget-container content-area vertical-col">
+								<a class="uib-graphic-button default-graphic-sizing default-image-sizing hover-graphic-button active-graphic-button default-graphic-button default-graphic-text widget uib_w_128 d-margins media-button-text-bottom 5" data-uib="media/graphic_button" data-ver="0">
+									<img src="images/CityBus_GLPTC_logo.png">
+									<span class="uib-caption">CITY BUS</span>
+								</a><span class="uib_shim"></span>
+							</div>
+						</div>
+						<div class="col uib_col_65 col-0_9-12" data-uib="layout/col" data-ver="0">
+							<div class="widget-container content-area vertical-col">
+								<a class="uib-graphic-button default-graphic-sizing default-image-sizing hover-graphic-button active-graphic-button default-graphic-button default-graphic-text widget uib_w_129 d-margins media-button-text-bottom" data-uib="media/graphic_button" data-ver="0">
+									<img src="images/bus-sign.png">
+									<span class="uib-caption">KMT</span>
+								</a><span class="uib_shim"></span>
+							</div>
+						</div>
+
+						<span class="uib_shim"></span>
+					</div>
+
+					<div class="grid grid-pad urow uib_row_99 row-height-99" data-uib="layout/row" data-ver="0">
+						<div class="col uib_col_110 col-0_12-12" data-uib="layout/col" data-ver="0">
+							<div class="widget-container content-area vertical-col">
+
+								<a class="uib-graphic-button default-graphic-sizing default-image-sizing hover-graphic-button active-graphic-button default-graphic-button default-graphic-text widget uib_w_664 d-margins media-button-text-bottom" data-uib="media/graphic_button" data-ver="0">
+									<img src="images/bus-icon.png">
+									<span class="uib-caption">Travels</span>
+								</a><span class="uib_shim"></span>
+							</div>
+						</div>
+						<span class="uib_shim"></span>
+					</div>
+				</div>
+				<div id="uib_page_2" class="upage-content hidden">
+
+					<div class="grid grid-pad urow uib_row_6 row-height-6" data-uib="layout/row" data-ver="0">
+						<div class="col uib_col_12 col-0_12-12" data-uib="layout/col" data-ver="0">
+							<div class="widget-container content-area vertical-col center">
+
+								<div class="widget uib_w_11 d-margins" data-uib="media/text" data-ver="0">
+									<div class="widget-container left-receptacle"></div>
+									<div class="widget-container right-receptacle"></div>
+									<div>
+										<p>It is a simple application like other system using android devices which give all information about Kolhapur.</p>
+										<p>k-indicator</p>
+										<p>version 1.01</p>
+										<p>kindicator@support.com</p>
+										<p>&nbsp;</p>
+									</div>
+								</div><a class="button widget uib_w_661 d-margins green" data-uib="app_framework/button" data-ver="1" a="" href="http://k-indicator.blogspot.in/">blog</a><a class="button widget uib_w_730 d-margins red" data-uib="app_framework/button" data-ver="1" a=""
+								href="http://k-indicator.weebly.com/contact-us.html">Contact Us</a>
+
+								<div class="widget uib_w_742 scale-image d-margins" data-uib="media/img" data-ver="0">
+									<figure class="figure-align">
+										<img src="images/about_us_icon (1).png">
+
+										<figcaption data-position="bottom"></figcaption>
+									</figure>
+								</div>
+								<span class="uib_shim"></span>
+							</div>
+						</div>
+						<span class="uib_shim"></span>
+					</div>
+				</div>
+				<div id="uib_page_1" class="upage-content hidden">
+
+					<div class="grid grid-pad urow uib_row_3 row-height-3" data-uib="layout/row" data-ver="0">
+						<div class="col uib_col_3 col-0_12-12 length" data-uib="layout/col" data-ver="0">
+							<div class="widget-container content-area wrapping-col left">
+
+								<span class="uib_shim"></span>
+							</div>
+						</div>
+						<span class="uib_shim"></span>
+					</div>
+
+					<div class="grid grid-pad urow uib_row_103 row-height-103" data-uib="layout/row" data-ver="0">
+						<div class="col uib_col_118 col-0_12-12" data-uib="layout/col" data-ver="0">
+							<div class="widget-container content-area vertical-col center">
+								<div class="widget uib_w_724 google-maps-size d-margins rest-of-height" data-uib="media/google_maps" data-ver="0" data-rpath="null" data-zoom="8" data-long="-121.9643" data-lat="37.3861"></div><a class="button widget uib_w_671 d-margins icon home" data-uib="app_framework/button" data-ver="1">goto4</a><span class="uib_shim"></span>
+							</div>
+						</div>
+						<span class="uib_shim"></span>
+					</div>
+				</div>
+				<div id="uib_thetres" class="upage-content hidden">
+					<!-- /upage-content -->
+
+				</div>
+
+				<!-- /upage-outer -->
+
+			</div>
+			<div id="uib_update" class="upage-content hidden">
+			</div>
+
+		</div>
+
+	</body>
+
+</html>
